@@ -5,7 +5,7 @@ import (
 	"sync"
 
 	server2 "github.com/rancher/dynamiclistener/server"
-	"github.com/rancher/rancher/pkg/features"
+	"github.com/uhhc/rancher/pkg/features"
 	"github.com/rancher/steve/pkg/auth"
 	"github.com/rancher/steve/pkg/server"
 	"github.com/sirupsen/logrus"

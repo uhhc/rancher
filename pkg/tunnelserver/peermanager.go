@@ -10,7 +10,7 @@ import (
 
 	"github.com/pkg/errors"
 	"github.com/rancher/norman/types/set"
-	"github.com/rancher/rancher/pkg/settings"
+	"github.com/uhhc/rancher/pkg/settings"
 	"github.com/rancher/remotedialer"
 	"github.com/rancher/types/config"
 	"github.com/rancher/types/peermanager"

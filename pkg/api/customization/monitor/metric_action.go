@@ -9,9 +9,9 @@ import (
 	"github.com/rancher/norman/parse"
 	"github.com/rancher/norman/types"
 	"github.com/rancher/norman/types/convert"
-	"github.com/rancher/rancher/pkg/clustermanager"
-	monitorutil "github.com/rancher/rancher/pkg/monitoring"
-	"github.com/rancher/rancher/pkg/ref"
+	"github.com/uhhc/rancher/pkg/clustermanager"
+	monitorutil "github.com/uhhc/rancher/pkg/monitoring"
+	"github.com/uhhc/rancher/pkg/ref"
 	v3 "github.com/rancher/types/apis/management.cattle.io/v3"
 	"github.com/rancher/types/config/dialer"
 )

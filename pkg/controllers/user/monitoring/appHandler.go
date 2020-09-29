@@ -1,8 +1,8 @@
 package monitoring
 
 import (
-	"github.com/rancher/rancher/pkg/monitoring"
-	"github.com/rancher/rancher/pkg/systemaccount"
+	"github.com/uhhc/rancher/pkg/monitoring"
+	"github.com/uhhc/rancher/pkg/systemaccount"
 	appsv1 "github.com/rancher/types/apis/apps/v1"
 	corev1 "github.com/rancher/types/apis/core/v1"
 	mgmtv3 "github.com/rancher/types/apis/management.cattle.io/v3"

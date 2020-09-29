@@ -22,9 +22,9 @@ import (
 	"context"
 	time "time"
 
-	versioned "github.com/rancher/rancher/pkg/wrangler/generated/clientset/versioned"
-	internalinterfaces "github.com/rancher/rancher/pkg/wrangler/generated/informers/externalversions/internalinterfaces"
-	v3 "github.com/rancher/rancher/pkg/wrangler/generated/listers/management.cattle.io/v3"
+	versioned "github.com/uhhc/rancher/pkg/wrangler/generated/clientset/versioned"
+	internalinterfaces "github.com/uhhc/rancher/pkg/wrangler/generated/informers/externalversions/internalinterfaces"
+	v3 "github.com/uhhc/rancher/pkg/wrangler/generated/listers/management.cattle.io/v3"
 	managementcattleiov3 "github.com/rancher/types/apis/management.cattle.io/v3"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	runtime "k8s.io/apimachinery/pkg/runtime"

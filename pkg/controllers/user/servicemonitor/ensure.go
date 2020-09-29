@@ -5,7 +5,7 @@ import (
 	"strings"
 
 	monitoringv1 "github.com/coreos/prometheus-operator/pkg/apis/monitoring/v1"
-	util "github.com/rancher/rancher/pkg/controllers/user/workload"
+	util "github.com/uhhc/rancher/pkg/controllers/user/workload"
 	corev1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/labels"
 	"k8s.io/apimachinery/pkg/runtime"

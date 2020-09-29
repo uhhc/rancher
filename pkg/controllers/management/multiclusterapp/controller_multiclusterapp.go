@@ -9,10 +9,10 @@ import (
 
 	"k8s.io/apimachinery/pkg/api/meta"
 
-	"github.com/rancher/rancher/pkg/clustermanager"
-	"github.com/rancher/rancher/pkg/controllers/management/rbac"
-	"github.com/rancher/rancher/pkg/namespace"
-	"github.com/rancher/rancher/pkg/ref"
+	"github.com/uhhc/rancher/pkg/clustermanager"
+	"github.com/uhhc/rancher/pkg/controllers/management/rbac"
+	"github.com/uhhc/rancher/pkg/namespace"
+	"github.com/uhhc/rancher/pkg/ref"
 	v3 "github.com/rancher/types/apis/management.cattle.io/v3"
 	pv3 "github.com/rancher/types/apis/project.cattle.io/v3"
 	"github.com/rancher/types/config"

@@ -3,7 +3,7 @@ package auth
 import (
 	"fmt"
 
-	"github.com/rancher/rancher/pkg/clustermanager"
+	"github.com/uhhc/rancher/pkg/clustermanager"
 	v3 "github.com/rancher/types/apis/management.cattle.io/v3"
 	"github.com/rancher/types/config"
 	apierrors "k8s.io/apimachinery/pkg/api/errors"

@@ -4,7 +4,7 @@ import (
 	"reflect"
 
 	"github.com/pkg/errors"
-	loggingconfig "github.com/rancher/rancher/pkg/controllers/user/logging/config"
+	loggingconfig "github.com/uhhc/rancher/pkg/controllers/user/logging/config"
 	v1 "github.com/rancher/types/apis/core/v1"
 	"github.com/rancher/types/config"
 

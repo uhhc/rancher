@@ -5,8 +5,8 @@ import (
 	"strings"
 
 	mVersion "github.com/mcuadros/go-version"
-	"github.com/rancher/rancher/pkg/namespace"
-	"github.com/rancher/rancher/pkg/settings"
+	"github.com/uhhc/rancher/pkg/namespace"
+	"github.com/uhhc/rancher/pkg/settings"
 	"github.com/rancher/rke/util"
 	v3 "github.com/rancher/types/apis/management.cattle.io/v3"
 	"github.com/sirupsen/logrus"

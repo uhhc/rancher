@@ -10,9 +10,9 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/rancher/rancher/pkg/controllers/management/k3supgrade"
-	kd "github.com/rancher/rancher/pkg/controllers/management/kontainerdrivermetadata"
-	img "github.com/rancher/rancher/pkg/image"
+	"github.com/uhhc/rancher/pkg/controllers/management/k3supgrade"
+	kd "github.com/uhhc/rancher/pkg/controllers/management/kontainerdrivermetadata"
+	img "github.com/uhhc/rancher/pkg/image"
 	"github.com/rancher/types/image"
 	"github.com/rancher/types/kdm"
 	"github.com/sirupsen/logrus"

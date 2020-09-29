@@ -5,7 +5,7 @@ import (
 
 	"k8s.io/apimachinery/pkg/runtime"
 
-	nodehelper "github.com/rancher/rancher/pkg/node"
+	nodehelper "github.com/uhhc/rancher/pkg/node"
 	v1 "github.com/rancher/types/apis/core/v1"
 	v3 "github.com/rancher/types/apis/management.cattle.io/v3"
 	"github.com/rancher/types/config"

@@ -8,9 +8,9 @@ import (
 	"time"
 
 	"github.com/pkg/errors"
-	"github.com/rancher/rancher/pkg/pipeline/utils"
-	"github.com/rancher/rancher/pkg/ref"
-	"github.com/rancher/rancher/pkg/ticker"
+	"github.com/uhhc/rancher/pkg/pipeline/utils"
+	"github.com/uhhc/rancher/pkg/ref"
+	"github.com/uhhc/rancher/pkg/ticker"
 	"github.com/rancher/rke/pki/cert"
 	v1 "github.com/rancher/types/apis/core/v1"
 	v3 "github.com/rancher/types/apis/project.cattle.io/v3"

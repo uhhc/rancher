@@ -3,9 +3,9 @@ package management
 import (
 	"context"
 
-	"github.com/rancher/rancher/pkg/clustermanager"
-	"github.com/rancher/rancher/pkg/controllers/management/k3supgrade"
-	"github.com/rancher/rancher/pkg/wrangler"
+	"github.com/uhhc/rancher/pkg/clustermanager"
+	"github.com/uhhc/rancher/pkg/controllers/management/k3supgrade"
+	"github.com/uhhc/rancher/pkg/wrangler"
 	"github.com/rancher/types/config"
 )
 

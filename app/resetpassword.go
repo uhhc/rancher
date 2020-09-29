@@ -8,7 +8,7 @@ import (
 
 	"github.com/docker/docker/pkg/reexec"
 	"github.com/pkg/errors"
-	"github.com/rancher/rancher/pkg/api/customization/authn"
+	"github.com/uhhc/rancher/pkg/api/customization/authn"
 	v3 "github.com/rancher/types/apis/management.cattle.io/v3"
 	"github.com/urfave/cli"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"

@@ -21,7 +21,7 @@ package versioned
 import (
 	"fmt"
 
-	managementv3 "github.com/rancher/rancher/pkg/wrangler/generated/clientset/versioned/typed/management.cattle.io/v3"
+	managementv3 "github.com/uhhc/rancher/pkg/wrangler/generated/clientset/versioned/typed/management.cattle.io/v3"
 	discovery "k8s.io/client-go/discovery"
 	rest "k8s.io/client-go/rest"
 	flowcontrol "k8s.io/client-go/util/flowcontrol"

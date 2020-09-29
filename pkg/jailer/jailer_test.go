@@ -4,7 +4,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/rancher/rancher/pkg/settings"
+	"github.com/uhhc/rancher/pkg/settings"
 	"github.com/stretchr/testify/assert"
 )
 

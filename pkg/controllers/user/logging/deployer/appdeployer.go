@@ -5,8 +5,8 @@ import (
 	"reflect"
 	"time"
 
-	loggingconfig "github.com/rancher/rancher/pkg/controllers/user/logging/config"
-	"github.com/rancher/rancher/pkg/ref"
+	loggingconfig "github.com/uhhc/rancher/pkg/controllers/user/logging/config"
+	"github.com/uhhc/rancher/pkg/ref"
 	v1 "github.com/rancher/types/apis/core/v1"
 	projectv3 "github.com/rancher/types/apis/project.cattle.io/v3"
 

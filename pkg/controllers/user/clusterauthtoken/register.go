@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/rancher/rancher/pkg/controllers/user/clusterauthtoken/common"
+	"github.com/uhhc/rancher/pkg/controllers/user/clusterauthtoken/common"
 	managementv3 "github.com/rancher/types/apis/management.cattle.io/v3"
 	"github.com/rancher/types/config"
 	"k8s.io/client-go/tools/cache"

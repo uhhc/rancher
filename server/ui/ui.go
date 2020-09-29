@@ -8,7 +8,7 @@ import (
 	"path/filepath"
 
 	"github.com/rancher/norman/parse"
-	"github.com/rancher/rancher/pkg/settings"
+	"github.com/uhhc/rancher/pkg/settings"
 	"github.com/sirupsen/logrus"
 )
 

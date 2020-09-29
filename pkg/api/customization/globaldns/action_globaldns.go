@@ -11,7 +11,7 @@ import (
 	"github.com/rancher/norman/parse"
 	"github.com/rancher/norman/types"
 	"github.com/rancher/norman/types/convert"
-	gaccess "github.com/rancher/rancher/pkg/api/customization/globalnamespaceaccess"
+	gaccess "github.com/uhhc/rancher/pkg/api/customization/globalnamespaceaccess"
 	managementschema "github.com/rancher/types/apis/management.cattle.io/v3/schema"
 	client "github.com/rancher/types/client/management/v3"
 	apierrors "k8s.io/apimachinery/pkg/api/errors"

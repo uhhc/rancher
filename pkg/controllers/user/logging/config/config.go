@@ -3,7 +3,7 @@ package constant
 import (
 	"fmt"
 
-	cutils "github.com/rancher/rancher/pkg/catalog/utils"
+	cutils "github.com/uhhc/rancher/pkg/catalog/utils"
 )
 
 const (

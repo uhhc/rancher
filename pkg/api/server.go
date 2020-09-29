@@ -3,7 +3,7 @@ package api
 import (
 	normanapi "github.com/rancher/norman/api"
 	"github.com/rancher/norman/types"
-	"github.com/rancher/rancher/pkg/settings"
+	"github.com/uhhc/rancher/pkg/settings"
 )
 
 func NewServer(schemas *types.Schemas) (*normanapi.Server, error) {

@@ -5,7 +5,7 @@ import (
 	"testing"
 
 	"github.com/rancher/norman/types/slice"
-	"github.com/rancher/rancher/pkg/controllers/user/rbac"
+	"github.com/uhhc/rancher/pkg/controllers/user/rbac"
 	authzv1 "github.com/rancher/types/apis/management.cattle.io/v3"
 	"github.com/rancher/types/config"
 	"gopkg.in/check.v1"

@@ -8,7 +8,7 @@ import (
 	"strings"
 
 	"github.com/pkg/errors"
-	catUtil "github.com/rancher/rancher/pkg/catalog/utils"
+	catUtil "github.com/uhhc/rancher/pkg/catalog/utils"
 )
 
 func Clone(path, url, branch string) error {

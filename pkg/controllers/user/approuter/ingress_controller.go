@@ -9,8 +9,8 @@ import (
 	"k8s.io/apimachinery/pkg/runtime"
 
 	"github.com/pkg/errors"
-	"github.com/rancher/rancher/pkg/settings"
-	"github.com/rancher/rancher/pkg/ticker"
+	"github.com/uhhc/rancher/pkg/settings"
+	"github.com/uhhc/rancher/pkg/ticker"
 	"github.com/rancher/types/apis/extensions/v1beta1"
 	"github.com/sirupsen/logrus"
 	extensionsv1beta1 "k8s.io/api/extensions/v1beta1"

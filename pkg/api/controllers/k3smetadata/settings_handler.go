@@ -7,8 +7,8 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/rancher/rancher/pkg/channelserver"
-	"github.com/rancher/rancher/pkg/settings"
+	"github.com/uhhc/rancher/pkg/channelserver"
+	"github.com/uhhc/rancher/pkg/settings"
 	v3 "github.com/rancher/types/apis/management.cattle.io/v3"
 	"github.com/rancher/types/config"
 	"github.com/rancher/wrangler/pkg/data"

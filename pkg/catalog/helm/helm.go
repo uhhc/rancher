@@ -19,9 +19,9 @@ import (
 	"time"
 
 	"github.com/rancher/norman/controller"
-	catUtil "github.com/rancher/rancher/pkg/catalog/utils"
-	nsutil "github.com/rancher/rancher/pkg/namespace"
-	"github.com/rancher/rancher/pkg/settings"
+	catUtil "github.com/uhhc/rancher/pkg/catalog/utils"
+	nsutil "github.com/uhhc/rancher/pkg/namespace"
+	"github.com/uhhc/rancher/pkg/settings"
 	v3 "github.com/rancher/types/apis/management.cattle.io/v3"
 	mgmtv3 "github.com/rancher/types/client/management/v3"
 

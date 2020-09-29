@@ -18,9 +18,9 @@ import (
 
 	"github.com/ghodss/yaml"
 	"github.com/pkg/errors"
-	"github.com/rancher/rancher/pkg/jailer"
-	"github.com/rancher/rancher/pkg/namespace"
-	"github.com/rancher/rancher/pkg/settings"
+	"github.com/uhhc/rancher/pkg/jailer"
+	"github.com/uhhc/rancher/pkg/namespace"
+	"github.com/uhhc/rancher/pkg/settings"
 	v3 "github.com/rancher/types/apis/project.cattle.io/v3"
 	"github.com/sirupsen/logrus"
 )

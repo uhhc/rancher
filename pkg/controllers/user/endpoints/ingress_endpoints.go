@@ -3,7 +3,7 @@ package endpoints
 import (
 	"strings"
 
-	workloadutil "github.com/rancher/rancher/pkg/controllers/user/workload"
+	workloadutil "github.com/uhhc/rancher/pkg/controllers/user/workload"
 	"github.com/rancher/types/apis/extensions/v1beta1"
 	"github.com/sirupsen/logrus"
 	extensionsv1beta1 "k8s.io/api/extensions/v1beta1"

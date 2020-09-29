@@ -9,7 +9,7 @@ import (
 	"time"
 
 	"github.com/rancher/norman/types/slice"
-	"github.com/rancher/rancher/pkg/tunnelserver"
+	"github.com/uhhc/rancher/pkg/tunnelserver"
 	"github.com/rancher/remotedialer"
 	"github.com/rancher/rke/k8s"
 	"github.com/rancher/rke/services"

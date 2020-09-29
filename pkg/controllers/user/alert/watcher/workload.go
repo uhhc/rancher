@@ -8,10 +8,10 @@ import (
 	"time"
 
 	"github.com/rancher/norman/controller"
-	"github.com/rancher/rancher/pkg/controllers/user/alert/common"
-	"github.com/rancher/rancher/pkg/controllers/user/alert/manager"
-	"github.com/rancher/rancher/pkg/controllers/user/workload"
-	"github.com/rancher/rancher/pkg/ticker"
+	"github.com/uhhc/rancher/pkg/controllers/user/alert/common"
+	"github.com/uhhc/rancher/pkg/controllers/user/alert/manager"
+	"github.com/uhhc/rancher/pkg/controllers/user/workload"
+	"github.com/uhhc/rancher/pkg/ticker"
 	appsv1 "github.com/rancher/types/apis/apps/v1"
 	v1 "github.com/rancher/types/apis/core/v1"
 	v3 "github.com/rancher/types/apis/management.cattle.io/v3"
@@ -24,7 +24,7 @@ import (
 	"k8s.io/apimachinery/pkg/labels"
 	"k8s.io/client-go/tools/cache"
 
-	nsutils "github.com/rancher/rancher/pkg/namespace"
+	nsutils "github.com/uhhc/rancher/pkg/namespace"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )
 

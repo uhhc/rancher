@@ -6,7 +6,7 @@ import (
 	"reflect"
 	"sort"
 
-	"github.com/rancher/rancher/pkg/controllers/user/nslabels"
+	"github.com/uhhc/rancher/pkg/controllers/user/nslabels"
 	typescorev1 "github.com/rancher/types/apis/core/v1"
 	v3 "github.com/rancher/types/apis/management.cattle.io/v3"
 	rnetworkingv1 "github.com/rancher/types/apis/networking.k8s.io/v1"

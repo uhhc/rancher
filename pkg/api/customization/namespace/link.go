@@ -5,8 +5,8 @@ import (
 
 	"github.com/rancher/norman/httperror"
 	"github.com/rancher/norman/types"
-	"github.com/rancher/rancher/pkg/clustermanager"
-	"github.com/rancher/rancher/pkg/resourcelink"
+	"github.com/uhhc/rancher/pkg/clustermanager"
+	"github.com/uhhc/rancher/pkg/resourcelink"
 	apierrors "k8s.io/apimachinery/pkg/api/errors"
 	"k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
 	printers2 "k8s.io/cli-runtime/pkg/printers"

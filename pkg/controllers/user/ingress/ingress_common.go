@@ -7,8 +7,8 @@ import (
 	"strings"
 
 	"github.com/rancher/norman/types/convert"
-	util "github.com/rancher/rancher/pkg/controllers/user/workload"
-	"github.com/rancher/rancher/pkg/settings"
+	util "github.com/uhhc/rancher/pkg/controllers/user/workload"
+	"github.com/uhhc/rancher/pkg/settings"
 	"github.com/sirupsen/logrus"
 	corev1 "k8s.io/api/core/v1"
 	"k8s.io/api/extensions/v1beta1"

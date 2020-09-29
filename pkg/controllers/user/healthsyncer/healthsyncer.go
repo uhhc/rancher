@@ -11,7 +11,7 @@ import (
 
 	"github.com/pkg/errors"
 	"github.com/rancher/norman/condition"
-	"github.com/rancher/rancher/pkg/ticker"
+	"github.com/uhhc/rancher/pkg/ticker"
 	corev1 "github.com/rancher/types/apis/core/v1"
 	v3 "github.com/rancher/types/apis/management.cattle.io/v3"
 	"github.com/rancher/types/config"

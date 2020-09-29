@@ -6,8 +6,8 @@ import (
 
 	"github.com/rancher/norman/httperror"
 	"github.com/rancher/norman/types"
-	c "github.com/rancher/rancher/pkg/api/customization/catalog"
-	"github.com/rancher/rancher/pkg/settings"
+	c "github.com/uhhc/rancher/pkg/api/customization/catalog"
+	"github.com/uhhc/rancher/pkg/settings"
 )
 
 type Store struct {

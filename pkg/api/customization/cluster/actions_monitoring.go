@@ -8,7 +8,7 @@ import (
 	"github.com/rancher/norman/httperror"
 	"github.com/rancher/norman/types"
 	"github.com/rancher/norman/types/convert"
-	"github.com/rancher/rancher/pkg/monitoring"
+	"github.com/uhhc/rancher/pkg/monitoring"
 	v3 "github.com/rancher/types/apis/management.cattle.io/v3"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )

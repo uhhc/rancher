@@ -6,7 +6,7 @@ import (
 	"github.com/rancher/norman/store/empty"
 	"github.com/rancher/norman/types"
 	"github.com/rancher/norman/types/convert"
-	"github.com/rancher/rancher/pkg/ref"
+	"github.com/uhhc/rancher/pkg/ref"
 	client "github.com/rancher/types/client/project/v3"
 	"github.com/rancher/types/config"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"

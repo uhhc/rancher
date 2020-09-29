@@ -19,9 +19,9 @@ limitations under the License.
 package fake
 
 import (
-	clientset "github.com/rancher/rancher/pkg/wrangler/generated/clientset/versioned"
-	managementv3 "github.com/rancher/rancher/pkg/wrangler/generated/clientset/versioned/typed/management.cattle.io/v3"
-	fakemanagementv3 "github.com/rancher/rancher/pkg/wrangler/generated/clientset/versioned/typed/management.cattle.io/v3/fake"
+	clientset "github.com/uhhc/rancher/pkg/wrangler/generated/clientset/versioned"
+	managementv3 "github.com/uhhc/rancher/pkg/wrangler/generated/clientset/versioned/typed/management.cattle.io/v3"
+	fakemanagementv3 "github.com/uhhc/rancher/pkg/wrangler/generated/clientset/versioned/typed/management.cattle.io/v3/fake"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/watch"
 	"k8s.io/client-go/discovery"

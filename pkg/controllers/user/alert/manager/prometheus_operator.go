@@ -8,7 +8,7 @@ import (
 	"strings"
 
 	monitoringv1 "github.com/coreos/prometheus-operator/pkg/apis/monitoring/v1"
-	monitorutil "github.com/rancher/rancher/pkg/monitoring"
+	monitorutil "github.com/uhhc/rancher/pkg/monitoring"
 	v1 "github.com/rancher/types/apis/core/v1"
 	v3 "github.com/rancher/types/apis/management.cattle.io/v3"
 	rmonitoringv1 "github.com/rancher/types/apis/monitoring.coreos.com/v1"

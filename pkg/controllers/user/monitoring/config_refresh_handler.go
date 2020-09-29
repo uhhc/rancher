@@ -5,7 +5,7 @@ import (
 	"reflect"
 	"sort"
 
-	"github.com/rancher/rancher/pkg/controllers/user/nslabels"
+	"github.com/uhhc/rancher/pkg/controllers/user/nslabels"
 	apiv1 "github.com/rancher/types/apis/core/v1"
 	rmonitoringv1 "github.com/rancher/types/apis/monitoring.coreos.com/v1"
 

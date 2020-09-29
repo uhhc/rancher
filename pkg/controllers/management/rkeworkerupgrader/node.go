@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"sort"
 
-	nodehelper "github.com/rancher/rancher/pkg/node"
-	nodeserver "github.com/rancher/rancher/pkg/rkenodeconfigserver"
+	nodehelper "github.com/uhhc/rancher/pkg/node"
+	nodeserver "github.com/uhhc/rancher/pkg/rkenodeconfigserver"
 	rkeservices "github.com/rancher/rke/services"
 	v3 "github.com/rancher/types/apis/management.cattle.io/v3"
 	"github.com/sirupsen/logrus"

@@ -5,7 +5,7 @@ import (
 	"encoding/json"
 
 	"github.com/docker/docker/api/types"
-	"github.com/rancher/rancher/pkg/settings"
+	"github.com/uhhc/rancher/pkg/settings"
 	v3 "github.com/rancher/types/apis/management.cattle.io/v3"
 )
 

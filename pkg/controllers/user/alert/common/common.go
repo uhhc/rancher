@@ -3,7 +3,7 @@ package common
 import (
 	"fmt"
 
-	"github.com/rancher/rancher/pkg/ref"
+	"github.com/uhhc/rancher/pkg/ref"
 	v3 "github.com/rancher/types/apis/management.cattle.io/v3"
 	"github.com/sirupsen/logrus"
 )

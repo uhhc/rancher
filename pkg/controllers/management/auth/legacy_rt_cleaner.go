@@ -1,7 +1,7 @@
 package auth
 
 import (
-	"github.com/rancher/rancher/pkg/api/store/roletemplate"
+	"github.com/uhhc/rancher/pkg/api/store/roletemplate"
 	v3 "github.com/rancher/types/apis/management.cattle.io/v3"
 	"github.com/rancher/types/config"
 	"k8s.io/apimachinery/pkg/runtime"

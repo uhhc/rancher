@@ -2,7 +2,7 @@ package monitoring
 
 import (
 	"github.com/pkg/errors"
-	"github.com/rancher/rancher/pkg/monitoring"
+	"github.com/uhhc/rancher/pkg/monitoring"
 	corev1 "github.com/rancher/types/apis/core/v1"
 	mgmtv3 "github.com/rancher/types/apis/management.cattle.io/v3"
 	k8scorev1 "k8s.io/api/core/v1"

@@ -18,7 +18,7 @@ import (
 	"github.com/rancher/dynamiclistener/server"
 	"github.com/rancher/dynamiclistener/storage/kubernetes"
 	"github.com/rancher/norman/types/convert"
-	"github.com/rancher/rancher/pkg/settings"
+	"github.com/uhhc/rancher/pkg/settings"
 	"github.com/rancher/wrangler-api/pkg/generated/controllers/core"
 	corev1controllers "github.com/rancher/wrangler-api/pkg/generated/controllers/core/v1"
 	"github.com/sirupsen/logrus"

@@ -9,9 +9,9 @@ import (
 
 	"github.com/gorilla/websocket"
 	"github.com/rancher/norman/types"
-	"github.com/rancher/rancher/pkg/pipeline/engine"
-	"github.com/rancher/rancher/pkg/ref"
-	"github.com/rancher/rancher/pkg/ticker"
+	"github.com/uhhc/rancher/pkg/pipeline/engine"
+	"github.com/uhhc/rancher/pkg/ref"
+	"github.com/uhhc/rancher/pkg/ticker"
 	"github.com/sirupsen/logrus"
 )
 

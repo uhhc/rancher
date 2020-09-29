@@ -3,7 +3,7 @@ package hooks
 import (
 	"net/http"
 
-	"github.com/rancher/rancher/pkg/pipeline/hooks/drivers"
+	"github.com/uhhc/rancher/pkg/pipeline/hooks/drivers"
 	"github.com/rancher/types/config"
 )
 

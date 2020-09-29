@@ -22,9 +22,9 @@ import (
 	"context"
 	"time"
 
-	clientset "github.com/rancher/rancher/pkg/wrangler/generated/clientset/versioned"
-	scheme "github.com/rancher/rancher/pkg/wrangler/generated/clientset/versioned/scheme"
-	informers "github.com/rancher/rancher/pkg/wrangler/generated/informers/externalversions"
+	clientset "github.com/uhhc/rancher/pkg/wrangler/generated/clientset/versioned"
+	scheme "github.com/uhhc/rancher/pkg/wrangler/generated/clientset/versioned/scheme"
+	informers "github.com/uhhc/rancher/pkg/wrangler/generated/informers/externalversions"
 	"github.com/rancher/wrangler/pkg/generic"
 	"github.com/rancher/wrangler/pkg/schemes"
 	"k8s.io/apimachinery/pkg/runtime/schema"

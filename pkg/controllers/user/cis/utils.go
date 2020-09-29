@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/rancher/rancher/pkg/app/utils"
-	"github.com/rancher/rancher/pkg/controllers/management/kontainerdrivermetadata"
-	"github.com/rancher/rancher/pkg/controllers/user/nslabels"
+	"github.com/uhhc/rancher/pkg/app/utils"
+	"github.com/uhhc/rancher/pkg/controllers/management/kontainerdrivermetadata"
+	"github.com/uhhc/rancher/pkg/controllers/user/nslabels"
 	"github.com/rancher/rke/util"
 	rcorev1 "github.com/rancher/types/apis/core/v1"
 	v3 "github.com/rancher/types/apis/management.cattle.io/v3"

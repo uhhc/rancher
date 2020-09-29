@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/rancher/rancher/pkg/auth/requests"
+	"github.com/uhhc/rancher/pkg/auth/requests"
 	"github.com/sirupsen/logrus"
 	v1 "k8s.io/api/authentication/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"

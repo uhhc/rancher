@@ -3,7 +3,7 @@ package auth
 import (
 	"strings"
 
-	grbstore "github.com/rancher/rancher/pkg/api/store/globalrolebindings"
+	grbstore "github.com/uhhc/rancher/pkg/api/store/globalrolebindings"
 	v3 "github.com/rancher/types/apis/management.cattle.io/v3"
 	"github.com/rancher/types/config"
 	"k8s.io/apimachinery/pkg/runtime"

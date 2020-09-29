@@ -13,7 +13,7 @@ import (
 	"strings"
 
 	"github.com/pkg/errors"
-	"github.com/rancher/rancher/pkg/catalog/git"
+	"github.com/uhhc/rancher/pkg/catalog/git"
 	v3 "github.com/rancher/types/apis/management.cattle.io/v3"
 	"github.com/sirupsen/logrus"
 )

@@ -6,8 +6,8 @@ import (
 
 	"github.com/rancher/norman/api/access"
 	"github.com/rancher/norman/types"
-	"github.com/rancher/rancher/pkg/kubeconfig"
-	"github.com/rancher/rancher/pkg/settings"
+	"github.com/uhhc/rancher/pkg/kubeconfig"
+	"github.com/uhhc/rancher/pkg/settings"
 	mgmtclient "github.com/rancher/types/client/management/v3"
 )
 

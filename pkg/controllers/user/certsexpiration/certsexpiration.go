@@ -7,8 +7,8 @@ import (
 	"strings"
 
 	"github.com/rancher/kontainer-engine/cluster"
-	"github.com/rancher/rancher/pkg/controllers/management/clusterprovisioner"
-	"github.com/rancher/rancher/pkg/rkecerts"
+	"github.com/uhhc/rancher/pkg/controllers/management/clusterprovisioner"
+	"github.com/uhhc/rancher/pkg/rkecerts"
 	rkecluster "github.com/rancher/rke/cluster"
 	"github.com/rancher/rke/hosts"
 	"github.com/rancher/rke/pki"

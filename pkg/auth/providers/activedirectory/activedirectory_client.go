@@ -9,7 +9,7 @@ import (
 	"github.com/pkg/errors"
 	"github.com/rancher/norman/httperror"
 	"github.com/rancher/norman/types/slice"
-	"github.com/rancher/rancher/pkg/auth/providers/common/ldap"
+	"github.com/uhhc/rancher/pkg/auth/providers/common/ldap"
 	v3 "github.com/rancher/types/apis/management.cattle.io/v3"
 	"github.com/rancher/types/apis/management.cattle.io/v3public"
 	"github.com/sirupsen/logrus"

@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/rancher/rancher/pkg/controllers/management/rbac"
-	"github.com/rancher/rancher/pkg/namespace"
+	"github.com/uhhc/rancher/pkg/controllers/management/rbac"
+	"github.com/uhhc/rancher/pkg/namespace"
 	v3 "github.com/rancher/types/apis/management.cattle.io/v3"
 	"github.com/rancher/types/config"
 

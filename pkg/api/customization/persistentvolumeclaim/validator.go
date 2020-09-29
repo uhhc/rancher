@@ -5,8 +5,8 @@ import (
 
 	"github.com/rancher/norman/httperror"
 	"github.com/rancher/norman/types"
-	"github.com/rancher/rancher/pkg/api/store/storageclass"
-	"github.com/rancher/rancher/pkg/clustermanager"
+	"github.com/uhhc/rancher/pkg/api/store/storageclass"
+	"github.com/uhhc/rancher/pkg/clustermanager"
 	apierrors "k8s.io/apimachinery/pkg/api/errors"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )

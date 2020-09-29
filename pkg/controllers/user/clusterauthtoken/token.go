@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"sort"
 
-	"github.com/rancher/rancher/pkg/controllers/user/clusterauthtoken/common"
+	"github.com/uhhc/rancher/pkg/controllers/user/clusterauthtoken/common"
 	clusterv3 "github.com/rancher/types/apis/cluster.cattle.io/v3"
 	managementv3 "github.com/rancher/types/apis/management.cattle.io/v3"
 	"k8s.io/apimachinery/pkg/api/errors"

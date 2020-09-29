@@ -7,7 +7,7 @@ import (
 
 	"github.com/rancher/norman/httperror"
 	"github.com/rancher/norman/types"
-	"github.com/rancher/rancher/pkg/auth/providers/common"
+	"github.com/uhhc/rancher/pkg/auth/providers/common"
 	v3 "github.com/rancher/types/apis/management.cattle.io/v3"
 )
 

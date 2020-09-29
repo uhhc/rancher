@@ -8,8 +8,8 @@ import (
 
 	"github.com/rancher/norman/httperror"
 	"github.com/rancher/norman/types"
-	"github.com/rancher/rancher/pkg/controllers/user/workload"
-	"github.com/rancher/rancher/pkg/ref"
+	"github.com/uhhc/rancher/pkg/controllers/user/workload"
+	"github.com/uhhc/rancher/pkg/ref"
 	v3 "github.com/rancher/types/apis/management.cattle.io/v3"
 	"github.com/rancher/types/config"
 	"github.com/sirupsen/logrus"

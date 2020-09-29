@@ -5,7 +5,7 @@ import (
 	"time"
 
 	"github.com/rancher/norman/clientbase"
-	"github.com/rancher/rancher/pkg/namespace"
+	"github.com/uhhc/rancher/pkg/namespace"
 	v3 "github.com/rancher/types/apis/management.cattle.io/v3"
 	"github.com/rancher/types/config"
 	"github.com/sirupsen/logrus"

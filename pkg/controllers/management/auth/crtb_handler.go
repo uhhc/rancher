@@ -5,7 +5,7 @@ import (
 	"strings"
 
 	"github.com/pkg/errors"
-	pkgrbac "github.com/rancher/rancher/pkg/rbac"
+	pkgrbac "github.com/uhhc/rancher/pkg/rbac"
 	v3 "github.com/rancher/types/apis/management.cattle.io/v3"
 	"github.com/sirupsen/logrus"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"

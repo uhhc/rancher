@@ -9,8 +9,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/rancher/rancher/pkg/catalog/utils"
-	"github.com/rancher/rancher/pkg/settings"
+	"github.com/uhhc/rancher/pkg/catalog/utils"
+	"github.com/uhhc/rancher/pkg/settings"
 	"github.com/rancher/wrangler/pkg/data"
 	"github.com/sirupsen/logrus"
 	"k8s.io/client-go/util/flowcontrol"

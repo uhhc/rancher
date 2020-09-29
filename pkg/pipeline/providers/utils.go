@@ -1,9 +1,9 @@
 package providers
 
 import (
-	"github.com/rancher/rancher/pkg/pipeline/remote"
-	"github.com/rancher/rancher/pkg/pipeline/utils"
-	"github.com/rancher/rancher/pkg/ref"
+	"github.com/uhhc/rancher/pkg/pipeline/remote"
+	"github.com/uhhc/rancher/pkg/pipeline/utils"
+	"github.com/uhhc/rancher/pkg/ref"
 	v3 "github.com/rancher/types/apis/project.cattle.io/v3"
 	uuid "github.com/satori/go.uuid"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"

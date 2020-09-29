@@ -3,9 +3,9 @@ package common
 import (
 	"net/url"
 
-	cutils "github.com/rancher/rancher/pkg/catalog/utils"
-	"github.com/rancher/rancher/pkg/ref"
-	"github.com/rancher/rancher/pkg/settings"
+	cutils "github.com/uhhc/rancher/pkg/catalog/utils"
+	"github.com/uhhc/rancher/pkg/ref"
+	"github.com/uhhc/rancher/pkg/settings"
 	v3 "github.com/rancher/types/apis/project.cattle.io/v3"
 	"github.com/sirupsen/logrus"
 )

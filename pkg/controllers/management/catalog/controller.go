@@ -6,8 +6,8 @@ import (
 	"path"
 	"time"
 
-	"github.com/rancher/rancher/pkg/catalog/manager"
-	"github.com/rancher/rancher/pkg/ticker"
+	"github.com/uhhc/rancher/pkg/catalog/manager"
+	"github.com/uhhc/rancher/pkg/ticker"
 	v3 "github.com/rancher/types/apis/management.cattle.io/v3"
 	"github.com/rancher/types/config"
 	"github.com/sirupsen/logrus"

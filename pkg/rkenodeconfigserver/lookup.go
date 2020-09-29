@@ -5,8 +5,8 @@ import (
 
 	"github.com/rancher/kontainer-engine/cluster"
 	kecerts "github.com/rancher/kontainer-engine/drivers/rke/rkecerts"
-	"github.com/rancher/rancher/pkg/controllers/management/clusterprovisioner"
-	"github.com/rancher/rancher/pkg/rkecerts"
+	"github.com/uhhc/rancher/pkg/controllers/management/clusterprovisioner"
+	"github.com/uhhc/rancher/pkg/rkecerts"
 	"github.com/rancher/rke/pki"
 	v1 "github.com/rancher/types/apis/core/v1"
 	v3 "github.com/rancher/types/apis/management.cattle.io/v3"

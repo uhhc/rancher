@@ -6,7 +6,7 @@ import (
 
 	"github.com/rancher/norman/httperror"
 	"github.com/rancher/norman/types"
-	rancherapi "github.com/rancher/rancher/pkg/api"
+	rancherapi "github.com/uhhc/rancher/pkg/api"
 	managementSchema "github.com/rancher/types/apis/management.cattle.io/v3/schema"
 	client "github.com/rancher/types/client/management/v3"
 	"github.com/rancher/types/config"

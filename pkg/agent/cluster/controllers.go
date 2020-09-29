@@ -5,8 +5,8 @@ package cluster
 import (
 	"context"
 
-	"github.com/rancher/rancher/pkg/agent/steve"
-	clusterController "github.com/rancher/rancher/pkg/controllers/user"
+	"github.com/uhhc/rancher/pkg/agent/steve"
+	clusterController "github.com/uhhc/rancher/pkg/controllers/user"
 	"github.com/rancher/types/config"
 	"github.com/sirupsen/logrus"
 	"k8s.io/client-go/rest"

@@ -10,8 +10,8 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/rancher/rancher/pkg/controllers/user/nslabels"
-	"github.com/rancher/rancher/pkg/pipeline/utils"
+	"github.com/uhhc/rancher/pkg/controllers/user/nslabels"
+	"github.com/uhhc/rancher/pkg/pipeline/utils"
 	"github.com/rancher/rke/pki/cert"
 	v3 "github.com/rancher/types/apis/project.cattle.io/v3"
 	"github.com/sirupsen/logrus"

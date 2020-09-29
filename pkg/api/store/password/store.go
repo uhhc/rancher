@@ -6,8 +6,8 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/rancher/rancher/pkg/namespace"
-	"github.com/rancher/rancher/pkg/randomtoken"
+	"github.com/uhhc/rancher/pkg/namespace"
+	"github.com/uhhc/rancher/pkg/randomtoken"
 
 	"github.com/rancher/types/config"
 

@@ -5,8 +5,8 @@ import (
 
 	"strings"
 
-	"github.com/rancher/rancher/pkg/namespace"
-	"github.com/rancher/rancher/pkg/ref"
+	"github.com/uhhc/rancher/pkg/namespace"
+	"github.com/uhhc/rancher/pkg/ref"
 	v3 "github.com/rancher/types/apis/management.cattle.io/v3"
 	"github.com/rancher/types/config"
 	corev1 "k8s.io/api/core/v1"

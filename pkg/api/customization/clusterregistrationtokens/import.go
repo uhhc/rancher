@@ -6,9 +6,9 @@ import (
 	"github.com/gorilla/mux"
 	"github.com/rancher/norman/types"
 	"github.com/rancher/norman/urlbuilder"
-	"github.com/rancher/rancher/pkg/image"
-	"github.com/rancher/rancher/pkg/settings"
-	"github.com/rancher/rancher/pkg/systemtemplate"
+	"github.com/uhhc/rancher/pkg/image"
+	"github.com/uhhc/rancher/pkg/settings"
+	"github.com/uhhc/rancher/pkg/systemtemplate"
 	"github.com/rancher/types/apis/management.cattle.io/v3/schema"
 )
 

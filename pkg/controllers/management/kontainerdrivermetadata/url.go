@@ -8,9 +8,9 @@ import (
 	"strings"
 
 	"github.com/rancher/norman/types/convert"
-	"github.com/rancher/rancher/pkg/catalog/git"
-	"github.com/rancher/rancher/pkg/randomtoken"
-	"github.com/rancher/rancher/pkg/settings"
+	"github.com/uhhc/rancher/pkg/catalog/git"
+	"github.com/uhhc/rancher/pkg/randomtoken"
+	"github.com/uhhc/rancher/pkg/settings"
 	"github.com/rancher/types/kdm"
 	"github.com/sirupsen/logrus"
 )

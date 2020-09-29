@@ -6,7 +6,7 @@ import (
 	"github.com/rancher/norman/httperror"
 	"github.com/rancher/norman/types"
 	"github.com/rancher/norman/types/convert"
-	"github.com/rancher/rancher/pkg/cert"
+	"github.com/uhhc/rancher/pkg/cert"
 	client "github.com/rancher/types/client/project/v3"
 )
 

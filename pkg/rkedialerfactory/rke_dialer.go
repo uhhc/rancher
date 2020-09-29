@@ -7,7 +7,7 @@ import (
 	"strings"
 
 	"github.com/rancher/norman/types/slice"
-	"github.com/rancher/rancher/pkg/ref"
+	"github.com/uhhc/rancher/pkg/ref"
 	"github.com/rancher/rke/hosts"
 	v3 "github.com/rancher/types/apis/management.cattle.io/v3"
 	"github.com/rancher/types/config/dialer"

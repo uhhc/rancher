@@ -5,8 +5,8 @@ import (
 	"testing"
 
 	"github.com/rancher/norman/httperror"
-	nodehelper "github.com/rancher/rancher/pkg/node"
-	"github.com/rancher/rancher/pkg/taints"
+	nodehelper "github.com/uhhc/rancher/pkg/node"
+	"github.com/uhhc/rancher/pkg/taints"
 	fake1 "github.com/rancher/types/apis/core/v1/fakes"
 	v3 "github.com/rancher/types/apis/management.cattle.io/v3"
 	fake3 "github.com/rancher/types/apis/management.cattle.io/v3/fakes"

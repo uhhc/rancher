@@ -19,7 +19,7 @@ limitations under the License.
 package v3
 
 import (
-	internalinterfaces "github.com/rancher/rancher/pkg/wrangler/generated/informers/externalversions/internalinterfaces"
+	internalinterfaces "github.com/uhhc/rancher/pkg/wrangler/generated/informers/externalversions/internalinterfaces"
 )
 
 // Interface provides access to all the informers in this group version.

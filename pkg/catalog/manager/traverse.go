@@ -6,9 +6,9 @@ import (
 
 	"github.com/pkg/errors"
 	"github.com/rancher/norman/controller"
-	helmlib "github.com/rancher/rancher/pkg/catalog/helm"
-	cutils "github.com/rancher/rancher/pkg/catalog/utils"
-	"github.com/rancher/rancher/pkg/namespace"
+	helmlib "github.com/uhhc/rancher/pkg/catalog/helm"
+	cutils "github.com/uhhc/rancher/pkg/catalog/utils"
+	"github.com/uhhc/rancher/pkg/namespace"
 	v3 "github.com/rancher/types/apis/management.cattle.io/v3"
 	client "github.com/rancher/types/client/management/v3"
 	"github.com/sirupsen/logrus"

@@ -23,9 +23,9 @@ import (
 	sync "sync"
 	time "time"
 
-	versioned "github.com/rancher/rancher/pkg/wrangler/generated/clientset/versioned"
-	internalinterfaces "github.com/rancher/rancher/pkg/wrangler/generated/informers/externalversions/internalinterfaces"
-	managementcattleio "github.com/rancher/rancher/pkg/wrangler/generated/informers/externalversions/management.cattle.io"
+	versioned "github.com/uhhc/rancher/pkg/wrangler/generated/clientset/versioned"
+	internalinterfaces "github.com/uhhc/rancher/pkg/wrangler/generated/informers/externalversions/internalinterfaces"
+	managementcattleio "github.com/uhhc/rancher/pkg/wrangler/generated/informers/externalversions/management.cattle.io"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	schema "k8s.io/apimachinery/pkg/runtime/schema"

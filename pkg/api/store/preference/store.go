@@ -6,7 +6,7 @@ import (
 	"github.com/rancher/norman/store/transform"
 	"github.com/rancher/norman/types"
 	"github.com/rancher/norman/types/convert"
-	"github.com/rancher/rancher/pkg/api/store/userscope"
+	"github.com/uhhc/rancher/pkg/api/store/userscope"
 	v1 "github.com/rancher/types/apis/core/v1"
 	client "github.com/rancher/types/client/management/v3"
 )

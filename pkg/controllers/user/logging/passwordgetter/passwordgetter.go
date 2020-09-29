@@ -3,7 +3,7 @@ package passwordgetter
 import (
 	"strings"
 
-	passwordutil "github.com/rancher/rancher/pkg/api/store/password"
+	passwordutil "github.com/uhhc/rancher/pkg/api/store/password"
 	v1 "github.com/rancher/types/apis/core/v1"
 	mgmtv3 "github.com/rancher/types/apis/management.cattle.io/v3"
 )

@@ -19,8 +19,8 @@ limitations under the License.
 package management
 
 import (
-	internalinterfaces "github.com/rancher/rancher/pkg/wrangler/generated/informers/externalversions/internalinterfaces"
-	v3 "github.com/rancher/rancher/pkg/wrangler/generated/informers/externalversions/management.cattle.io/v3"
+	internalinterfaces "github.com/uhhc/rancher/pkg/wrangler/generated/informers/externalversions/internalinterfaces"
+	v3 "github.com/uhhc/rancher/pkg/wrangler/generated/informers/externalversions/management.cattle.io/v3"
 )
 
 // Interface provides access to each of this group's versions.

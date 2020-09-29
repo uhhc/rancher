@@ -19,9 +19,9 @@ limitations under the License.
 package management
 
 import (
-	clientset "github.com/rancher/rancher/pkg/wrangler/generated/clientset/versioned"
-	v3 "github.com/rancher/rancher/pkg/wrangler/generated/controllers/management.cattle.io/v3"
-	informers "github.com/rancher/rancher/pkg/wrangler/generated/informers/externalversions/management.cattle.io"
+	clientset "github.com/uhhc/rancher/pkg/wrangler/generated/clientset/versioned"
+	v3 "github.com/uhhc/rancher/pkg/wrangler/generated/controllers/management.cattle.io/v3"
+	informers "github.com/uhhc/rancher/pkg/wrangler/generated/informers/externalversions/management.cattle.io"
 	"github.com/rancher/wrangler/pkg/generic"
 )
 

@@ -7,7 +7,7 @@ import (
 
 	"k8s.io/apimachinery/pkg/runtime"
 
-	"github.com/rancher/rancher/pkg/clustermanager"
+	"github.com/uhhc/rancher/pkg/clustermanager"
 	v3 "github.com/rancher/types/apis/management.cattle.io/v3"
 	"github.com/rancher/types/config"
 	v1 "k8s.io/api/core/v1"

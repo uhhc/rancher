@@ -9,6 +9,7 @@ import (
 	"io/ioutil"
 	"net/http"
 	"net/url"
+	"os"
 	"strconv"
 	"strings"
 	"time"
@@ -16,10 +17,10 @@ import (
 	"github.com/google/go-querystring/query"
 	"github.com/pkg/errors"
 	"github.com/rancher/norman/httperror"
-	"github.com/rancher/rancher/pkg/pipeline/remote/model"
-	"github.com/rancher/rancher/pkg/pipeline/utils"
-	"github.com/rancher/rancher/pkg/ref"
-	"github.com/rancher/rancher/pkg/settings"
+	"github.com/uhhc/rancher/pkg/pipeline/remote/model"
+	"github.com/uhhc/rancher/pkg/pipeline/utils"
+	"github.com/uhhc/rancher/pkg/ref"
+	"github.com/uhhc/rancher/pkg/settings"
 	v3 "github.com/rancher/types/apis/project.cattle.io/v3"
 	"github.com/sirupsen/logrus"
 	"github.com/tomnomnom/linkheader"
@@ -430,8 +431,16 @@ func doRequestToGitlab(method string, url string, gitlabAccessToken string, opt 
 	if err != nil {
 		return nil, err
 	}
+	// Get timeout from env
+	var timeout time.Duration
+	if os.Getenv("GITLAB_TIMEOUT") == "" {
+		timeout = 15 * time.Second
+	} else {
+		t, _ := strconv.Atoi(os.Getenv("GITLAB_TIMEOUT"))
+		timeout = time.Duration(t) * time.Second
+	}
 	client := &http.Client{
-		Timeout: 30 * time.Second,
+		Timeout: timeout,
 	}
 	//set to max 100 per page to reduce query time
 	if method == http.MethodGet {

@@ -5,7 +5,7 @@ import (
 	"strings"
 
 	"github.com/rancher/norman/types/slice"
-	"github.com/rancher/rancher/pkg/settings"
+	"github.com/uhhc/rancher/pkg/settings"
 	rv1 "github.com/rancher/types/apis/core/v1"
 	"github.com/rancher/types/config"
 	"github.com/sirupsen/logrus"

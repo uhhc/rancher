@@ -6,7 +6,7 @@ import (
 	"time"
 
 	"github.com/pkg/errors"
-	"github.com/rancher/rancher/pkg/auth/tokens"
+	"github.com/uhhc/rancher/pkg/auth/tokens"
 	v3 "github.com/rancher/types/apis/management.cattle.io/v3"
 	"github.com/rancher/types/config"
 	"github.com/robfig/cron"

@@ -3,8 +3,8 @@ package monitoring
 import (
 	"context"
 
-	"github.com/rancher/rancher/pkg/monitoring"
-	"github.com/rancher/rancher/pkg/systemaccount"
+	"github.com/uhhc/rancher/pkg/monitoring"
+	"github.com/uhhc/rancher/pkg/systemaccount"
 	"github.com/rancher/types/config"
 	"github.com/sirupsen/logrus"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"

@@ -3,11 +3,11 @@ package wrangler
 import (
 	"context"
 
-	"github.com/rancher/rancher/pkg/features"
+	"github.com/uhhc/rancher/pkg/features"
 	"github.com/rancher/steve/pkg/accesscontrol"
 
-	"github.com/rancher/rancher/pkg/wrangler/generated/controllers/management.cattle.io"
-	managementv3 "github.com/rancher/rancher/pkg/wrangler/generated/controllers/management.cattle.io/v3"
+	"github.com/uhhc/rancher/pkg/wrangler/generated/controllers/management.cattle.io"
+	managementv3 "github.com/uhhc/rancher/pkg/wrangler/generated/controllers/management.cattle.io/v3"
 	"github.com/rancher/remotedialer"
 	"github.com/rancher/steve/pkg/server"
 	"github.com/rancher/wrangler/pkg/apply"

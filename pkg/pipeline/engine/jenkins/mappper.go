@@ -6,9 +6,9 @@ import (
 	"strings"
 
 	"github.com/pkg/errors"
-	images "github.com/rancher/rancher/pkg/image"
-	"github.com/rancher/rancher/pkg/pipeline/utils"
-	"github.com/rancher/rancher/pkg/ref"
+	images "github.com/uhhc/rancher/pkg/image"
+	"github.com/uhhc/rancher/pkg/pipeline/utils"
+	"github.com/uhhc/rancher/pkg/ref"
 	apiv1 "github.com/rancher/types/apis/core/v1"
 	mv3 "github.com/rancher/types/apis/management.cattle.io/v3"
 	v3 "github.com/rancher/types/apis/project.cattle.io/v3"

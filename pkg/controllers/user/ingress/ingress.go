@@ -6,7 +6,7 @@ import (
 	"k8s.io/apimachinery/pkg/runtime"
 
 	"github.com/rancher/norman/types/convert"
-	util "github.com/rancher/rancher/pkg/controllers/user/workload"
+	util "github.com/uhhc/rancher/pkg/controllers/user/workload"
 	v1 "github.com/rancher/types/apis/core/v1"
 	"github.com/rancher/types/config"
 	"github.com/sirupsen/logrus"

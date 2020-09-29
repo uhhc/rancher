@@ -13,7 +13,7 @@ import (
 	"github.com/rancher/kontainer-engine/types"
 	normantypes "github.com/rancher/norman/types"
 	"github.com/rancher/norman/types/convert"
-	"github.com/rancher/rancher/pkg/controllers/management/clusterprovisioner"
+	"github.com/uhhc/rancher/pkg/controllers/management/clusterprovisioner"
 	"github.com/rancher/rke/cloudprovider/aws"
 	"github.com/rancher/rke/cloudprovider/azure"
 	v1 "github.com/rancher/types/apis/core/v1"

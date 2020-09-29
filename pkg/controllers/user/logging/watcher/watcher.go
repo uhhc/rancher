@@ -5,8 +5,8 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/rancher/rancher/pkg/controllers/user/logging/utils"
-	"github.com/rancher/rancher/pkg/ticker"
+	"github.com/uhhc/rancher/pkg/controllers/user/logging/utils"
+	"github.com/uhhc/rancher/pkg/ticker"
 	mgmtv3 "github.com/rancher/types/apis/management.cattle.io/v3"
 	"github.com/rancher/types/config"
 	"github.com/rancher/types/config/dialer"

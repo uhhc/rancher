@@ -6,9 +6,9 @@ import (
 	"time"
 
 	"github.com/prometheus/client_golang/prometheus"
-	"github.com/rancher/rancher/pkg/auth/util"
-	"github.com/rancher/rancher/pkg/settings"
-	"github.com/rancher/rancher/pkg/ticker"
+	"github.com/uhhc/rancher/pkg/auth/util"
+	"github.com/uhhc/rancher/pkg/settings"
+	"github.com/uhhc/rancher/pkg/ticker"
 	"github.com/rancher/types/config"
 	authV1 "k8s.io/api/authorization/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"

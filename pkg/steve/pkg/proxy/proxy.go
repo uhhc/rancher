@@ -8,8 +8,8 @@ import (
 	"time"
 
 	"github.com/gorilla/mux"
-	"github.com/rancher/rancher/pkg/features"
-	v3 "github.com/rancher/rancher/pkg/wrangler/generated/controllers/management.cattle.io/v3"
+	"github.com/uhhc/rancher/pkg/features"
+	v3 "github.com/uhhc/rancher/pkg/wrangler/generated/controllers/management.cattle.io/v3"
 	"github.com/rancher/remotedialer"
 	"github.com/rancher/steve/pkg/proxy"
 	managementv3 "github.com/rancher/types/apis/management.cattle.io/v3"

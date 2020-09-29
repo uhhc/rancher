@@ -6,7 +6,7 @@ import (
 	"fmt"
 
 	monitoringv1 "github.com/coreos/prometheus-operator/pkg/apis/monitoring/v1"
-	util "github.com/rancher/rancher/pkg/controllers/user/workload"
+	util "github.com/uhhc/rancher/pkg/controllers/user/workload"
 	"github.com/sirupsen/logrus"
 	corev1 "k8s.io/api/core/v1"
 	apierrors "k8s.io/apimachinery/pkg/api/errors"

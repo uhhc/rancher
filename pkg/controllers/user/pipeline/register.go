@@ -3,9 +3,9 @@ package pipeline
 import (
 	"context"
 
-	"github.com/rancher/rancher/pkg/controllers/user/pipeline/controller/pipeline"
-	"github.com/rancher/rancher/pkg/controllers/user/pipeline/controller/pipelineexecution"
-	"github.com/rancher/rancher/pkg/controllers/user/pipeline/controller/project"
+	"github.com/uhhc/rancher/pkg/controllers/user/pipeline/controller/pipeline"
+	"github.com/uhhc/rancher/pkg/controllers/user/pipeline/controller/pipelineexecution"
+	"github.com/uhhc/rancher/pkg/controllers/user/pipeline/controller/project"
 	"github.com/rancher/types/config"
 )
 

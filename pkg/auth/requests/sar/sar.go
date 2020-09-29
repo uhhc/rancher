@@ -4,8 +4,8 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/rancher/rancher/pkg/clustermanager"
-	"github.com/rancher/rancher/pkg/clusterrouter"
+	"github.com/uhhc/rancher/pkg/clustermanager"
+	"github.com/uhhc/rancher/pkg/clusterrouter"
 	"github.com/rancher/types/config"
 	"github.com/sirupsen/logrus"
 	authV1 "k8s.io/api/authorization/v1"

@@ -7,7 +7,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/rancher/rancher/pkg/controllers/user/cis"
+	"github.com/uhhc/rancher/pkg/controllers/user/cis"
 	managementv3 "github.com/rancher/types/apis/management.cattle.io/v3"
 	v3 "github.com/rancher/types/apis/management.cattle.io/v3"
 	"github.com/robfig/cron"

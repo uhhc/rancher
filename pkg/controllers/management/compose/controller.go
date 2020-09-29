@@ -11,7 +11,7 @@ import (
 	"github.com/rancher/norman/controller"
 	"github.com/rancher/norman/types"
 	"github.com/rancher/norman/types/convert"
-	"github.com/rancher/rancher/pkg/controllers/management/compose/common"
+	"github.com/uhhc/rancher/pkg/controllers/management/compose/common"
 	v3 "github.com/rancher/types/apis/management.cattle.io/v3"
 	clusterClient "github.com/rancher/types/client/cluster/v3"
 	managementClient "github.com/rancher/types/client/management/v3"

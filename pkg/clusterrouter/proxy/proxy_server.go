@@ -12,7 +12,7 @@ import (
 	"sync"
 
 	"github.com/rancher/norman/httperror"
-	factory "github.com/rancher/rancher/pkg/dialer"
+	factory "github.com/uhhc/rancher/pkg/dialer"
 	v3 "github.com/rancher/types/apis/management.cattle.io/v3"
 	"github.com/rancher/types/config/dialer"
 	"k8s.io/apimachinery/pkg/runtime/schema"

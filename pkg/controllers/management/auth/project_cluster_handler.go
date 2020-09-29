@@ -10,9 +10,9 @@ import (
 
 	"github.com/pkg/errors"
 	"github.com/rancher/norman/condition"
-	systemimage "github.com/rancher/rancher/pkg/controllers/user/systemimage"
-	"github.com/rancher/rancher/pkg/project"
-	"github.com/rancher/rancher/pkg/systemaccount"
+	systemimage "github.com/uhhc/rancher/pkg/controllers/user/systemimage"
+	"github.com/uhhc/rancher/pkg/project"
+	"github.com/uhhc/rancher/pkg/systemaccount"
 	corev1 "github.com/rancher/types/apis/core/v1"
 	v3 "github.com/rancher/types/apis/management.cattle.io/v3"
 	rrbacv1 "github.com/rancher/types/apis/rbac.authorization.k8s.io/v1"

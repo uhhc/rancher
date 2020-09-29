@@ -9,8 +9,8 @@ import (
 	"strings"
 	"text/template"
 
-	util "github.com/rancher/rancher/pkg/cluster"
-	"github.com/rancher/rancher/pkg/settings"
+	util "github.com/uhhc/rancher/pkg/cluster"
+	"github.com/uhhc/rancher/pkg/settings"
 	v3 "github.com/rancher/types/apis/management.cattle.io/v3"
 )
 

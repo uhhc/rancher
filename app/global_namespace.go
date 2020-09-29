@@ -3,8 +3,8 @@ package app
 import (
 	"fmt"
 
-	"github.com/rancher/rancher/pkg/namespace"
-	"github.com/rancher/rancher/pkg/settings"
+	"github.com/uhhc/rancher/pkg/namespace"
+	"github.com/uhhc/rancher/pkg/settings"
 	"github.com/rancher/types/config"
 	"github.com/sirupsen/logrus"
 

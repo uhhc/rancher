@@ -6,9 +6,9 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/rancher/rancher/pkg/audit"
-	"github.com/rancher/rancher/pkg/auth/providerrefresh"
-	"github.com/rancher/rancher/pkg/auth/util"
+	"github.com/uhhc/rancher/pkg/audit"
+	"github.com/uhhc/rancher/pkg/auth/providerrefresh"
+	"github.com/uhhc/rancher/pkg/auth/util"
 	"github.com/rancher/types/config"
 )
 

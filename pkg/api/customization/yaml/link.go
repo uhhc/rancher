@@ -6,7 +6,7 @@ import (
 
 	"github.com/rancher/norman/httperror"
 	"github.com/rancher/norman/types"
-	"github.com/rancher/rancher/pkg/clustermanager"
+	"github.com/uhhc/rancher/pkg/clustermanager"
 )
 
 func NewLinkHandler(proxy http.Handler, manager *clustermanager.Manager, next types.RequestHandler) types.RequestHandler {

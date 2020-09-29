@@ -22,7 +22,7 @@ import (
 	"context"
 	"time"
 
-	scheme "github.com/rancher/rancher/pkg/wrangler/generated/clientset/versioned/scheme"
+	scheme "github.com/uhhc/rancher/pkg/wrangler/generated/clientset/versioned/scheme"
 	v3 "github.com/rancher/types/apis/management.cattle.io/v3"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	types "k8s.io/apimachinery/pkg/types"

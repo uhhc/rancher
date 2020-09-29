@@ -5,8 +5,8 @@ import (
 
 	"github.com/rancher/norman/httperror"
 	"github.com/rancher/norman/types"
-	gaccess "github.com/rancher/rancher/pkg/api/customization/globalnamespaceaccess"
-	"github.com/rancher/rancher/pkg/clustermanager"
+	gaccess "github.com/uhhc/rancher/pkg/api/customization/globalnamespaceaccess"
+	"github.com/uhhc/rancher/pkg/clustermanager"
 	v3 "github.com/rancher/types/apis/management.cattle.io/v3"
 	mgmtclient "github.com/rancher/types/client/management/v3"
 	"github.com/rancher/types/user"

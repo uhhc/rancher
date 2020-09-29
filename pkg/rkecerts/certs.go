@@ -20,7 +20,7 @@ import (
 	"github.com/ghodss/yaml"
 	"github.com/rancher/kontainer-engine/drivers/rke/rkecerts"
 	"github.com/rancher/norman/types"
-	"github.com/rancher/rancher/pkg/librke"
+	"github.com/uhhc/rancher/pkg/librke"
 	"github.com/rancher/rke/pki"
 	"github.com/rancher/rke/pki/cert"
 	v3 "github.com/rancher/types/apis/management.cattle.io/v3"

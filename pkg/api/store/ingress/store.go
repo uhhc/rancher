@@ -13,9 +13,9 @@ import (
 	"github.com/rancher/norman/types"
 	"github.com/rancher/norman/types/convert"
 	"github.com/rancher/norman/types/values"
-	"github.com/rancher/rancher/pkg/api/store/workload"
-	"github.com/rancher/rancher/pkg/controllers/user/ingress"
-	"github.com/rancher/rancher/pkg/ref"
+	"github.com/uhhc/rancher/pkg/api/store/workload"
+	"github.com/uhhc/rancher/pkg/controllers/user/ingress"
+	"github.com/uhhc/rancher/pkg/ref"
 	"github.com/sirupsen/logrus"
 )
 

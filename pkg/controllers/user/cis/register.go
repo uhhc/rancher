@@ -4,8 +4,8 @@ import (
 	"context"
 	"time"
 
-	"github.com/rancher/rancher/pkg/namespace"
-	"github.com/rancher/rancher/pkg/systemaccount"
+	"github.com/uhhc/rancher/pkg/namespace"
+	"github.com/uhhc/rancher/pkg/systemaccount"
 	v3 "github.com/rancher/types/apis/management.cattle.io/v3"
 	"github.com/rancher/types/config"
 	"github.com/sirupsen/logrus"

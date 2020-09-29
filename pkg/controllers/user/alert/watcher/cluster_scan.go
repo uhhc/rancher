@@ -5,8 +5,8 @@ import (
 	"fmt"
 
 	"github.com/hashicorp/go-multierror"
-	"github.com/rancher/rancher/pkg/controllers/user/alert/common"
-	"github.com/rancher/rancher/pkg/controllers/user/alert/manager"
+	"github.com/uhhc/rancher/pkg/controllers/user/alert/common"
+	"github.com/uhhc/rancher/pkg/controllers/user/alert/manager"
 	v3 "github.com/rancher/types/apis/management.cattle.io/v3"
 	"github.com/rancher/types/config"
 	"github.com/sirupsen/logrus"

@@ -1,7 +1,7 @@
 package engine
 
 import (
-	"github.com/rancher/rancher/pkg/pipeline/engine/jenkins"
+	"github.com/uhhc/rancher/pkg/pipeline/engine/jenkins"
 	v3 "github.com/rancher/types/apis/project.cattle.io/v3"
 	"github.com/rancher/types/config"
 )

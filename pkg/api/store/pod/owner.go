@@ -8,8 +8,8 @@ import (
 	"github.com/rancher/norman/api/access"
 	"github.com/rancher/norman/types"
 	"github.com/rancher/norman/types/values"
-	"github.com/rancher/rancher/pkg/controllers/user/workload"
-	"github.com/rancher/rancher/pkg/ref"
+	"github.com/uhhc/rancher/pkg/controllers/user/workload"
+	"github.com/uhhc/rancher/pkg/ref"
 	"github.com/rancher/types/apis/project.cattle.io/v3/schema"
 	"github.com/sirupsen/logrus"
 )

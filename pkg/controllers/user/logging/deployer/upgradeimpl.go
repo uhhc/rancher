@@ -6,10 +6,10 @@ import (
 	"strings"
 	"time"
 
-	versionutil "github.com/rancher/rancher/pkg/catalog/utils"
-	"github.com/rancher/rancher/pkg/controllers/user/helm/common"
-	loggingconfig "github.com/rancher/rancher/pkg/controllers/user/logging/config"
-	"github.com/rancher/rancher/pkg/project"
+	versionutil "github.com/uhhc/rancher/pkg/catalog/utils"
+	"github.com/uhhc/rancher/pkg/controllers/user/helm/common"
+	loggingconfig "github.com/uhhc/rancher/pkg/controllers/user/logging/config"
+	"github.com/uhhc/rancher/pkg/project"
 	appsv1 "github.com/rancher/types/apis/apps/v1"
 	v1 "github.com/rancher/types/apis/core/v1"
 	v3 "github.com/rancher/types/apis/management.cattle.io/v3"
@@ -17,7 +17,7 @@ import (
 	"github.com/rancher/types/config"
 
 	"github.com/pkg/errors"
-	"github.com/rancher/rancher/pkg/namespace"
+	"github.com/uhhc/rancher/pkg/namespace"
 	apierrors "k8s.io/apimachinery/pkg/api/errors"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/labels"

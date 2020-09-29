@@ -3,7 +3,7 @@ package feature
 import (
 	"testing"
 
-	"github.com/rancher/rancher/pkg/features"
+	"github.com/uhhc/rancher/pkg/features"
 	v3 "github.com/rancher/types/apis/management.cattle.io/v3"
 	"github.com/stretchr/testify/assert"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"

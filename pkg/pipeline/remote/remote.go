@@ -3,11 +3,11 @@ package remote
 import (
 	"errors"
 
-	"github.com/rancher/rancher/pkg/pipeline/remote/bitbucketcloud"
-	"github.com/rancher/rancher/pkg/pipeline/remote/bitbucketserver"
-	"github.com/rancher/rancher/pkg/pipeline/remote/github"
-	"github.com/rancher/rancher/pkg/pipeline/remote/gitlab"
-	"github.com/rancher/rancher/pkg/pipeline/remote/model"
+	"github.com/uhhc/rancher/pkg/pipeline/remote/bitbucketcloud"
+	"github.com/uhhc/rancher/pkg/pipeline/remote/bitbucketserver"
+	"github.com/uhhc/rancher/pkg/pipeline/remote/github"
+	"github.com/uhhc/rancher/pkg/pipeline/remote/gitlab"
+	"github.com/uhhc/rancher/pkg/pipeline/remote/model"
 	v3 "github.com/rancher/types/apis/project.cattle.io/v3"
 )
 

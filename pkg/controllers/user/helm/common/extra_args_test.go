@@ -3,7 +3,7 @@ package common
 import (
 	"testing"
 
-	"github.com/rancher/rancher/pkg/settings"
+	"github.com/uhhc/rancher/pkg/settings"
 	v3 "github.com/rancher/types/apis/project.cattle.io/v3"
 	"github.com/stretchr/testify/assert"
 )

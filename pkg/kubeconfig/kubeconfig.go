@@ -7,7 +7,7 @@ import (
 	"regexp"
 
 	"github.com/rancher/norman/types/slice"
-	"github.com/rancher/rancher/pkg/settings"
+	"github.com/uhhc/rancher/pkg/settings"
 	"github.com/rancher/rke/services"
 	managementv3 "github.com/rancher/types/client/management/v3"
 )

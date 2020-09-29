@@ -6,8 +6,8 @@ import (
 	"net/url"
 	"strings"
 
-	loggingconfig "github.com/rancher/rancher/pkg/controllers/user/logging/config"
-	"github.com/rancher/rancher/pkg/controllers/user/logging/utils"
+	loggingconfig "github.com/uhhc/rancher/pkg/controllers/user/logging/config"
+	"github.com/uhhc/rancher/pkg/controllers/user/logging/utils"
 	v3 "github.com/rancher/types/apis/management.cattle.io/v3"
 
 	"github.com/pkg/errors"

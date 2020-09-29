@@ -14,7 +14,7 @@ import (
 	"github.com/rancher/norman/types"
 	"github.com/rancher/norman/types/convert"
 	"github.com/rancher/norman/types/values"
-	"github.com/rancher/rancher/pkg/clustermanager"
+	"github.com/uhhc/rancher/pkg/clustermanager"
 	appsv1 "github.com/rancher/types/apis/apps/v1"
 	"github.com/rancher/types/apis/project.cattle.io/v3/schema"
 	projectschema "github.com/rancher/types/apis/project.cattle.io/v3/schema"

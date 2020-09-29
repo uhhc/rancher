@@ -7,7 +7,7 @@ import (
 
 	"github.com/rancher/norman/types"
 	"github.com/rancher/norman/types/convert"
-	gaccess "github.com/rancher/rancher/pkg/api/customization/globalnamespaceaccess"
+	gaccess "github.com/uhhc/rancher/pkg/api/customization/globalnamespaceaccess"
 	v3 "github.com/rancher/types/apis/management.cattle.io/v3"
 	client "github.com/rancher/types/client/management/v3"
 	"k8s.io/apimachinery/pkg/api/meta"

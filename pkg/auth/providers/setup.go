@@ -5,8 +5,8 @@ import (
 
 	"github.com/rancher/norman/store/subtype"
 	"github.com/rancher/norman/types"
-	"github.com/rancher/rancher/pkg/api/store/auth"
-	"github.com/rancher/rancher/pkg/namespace"
+	"github.com/uhhc/rancher/pkg/api/store/auth"
+	"github.com/uhhc/rancher/pkg/namespace"
 	managementschema "github.com/rancher/types/apis/management.cattle.io/v3/schema"
 	client "github.com/rancher/types/client/management/v3"
 	"github.com/rancher/types/config"

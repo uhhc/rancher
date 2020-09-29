@@ -5,7 +5,7 @@ import (
 	"strings"
 
 	"github.com/pkg/errors"
-	cutils "github.com/rancher/rancher/pkg/catalog/utils"
+	cutils "github.com/uhhc/rancher/pkg/catalog/utils"
 	v3 "github.com/rancher/types/apis/project.cattle.io/v3"
 	"github.com/sirupsen/logrus"
 	"k8s.io/apimachinery/pkg/runtime"

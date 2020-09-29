@@ -8,8 +8,8 @@ import (
 	"time"
 
 	"github.com/rancher/norman/types/convert"
-	"github.com/rancher/rancher/pkg/kubectl"
-	nodehelper "github.com/rancher/rancher/pkg/node"
+	"github.com/uhhc/rancher/pkg/kubectl"
+	nodehelper "github.com/uhhc/rancher/pkg/node"
 	v3 "github.com/rancher/types/apis/management.cattle.io/v3"
 	"github.com/sirupsen/logrus"
 	"k8s.io/apimachinery/pkg/api/errors"

@@ -5,11 +5,11 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/rancher/rancher/pkg/app/utils"
+	"github.com/uhhc/rancher/pkg/app/utils"
 	"k8s.io/apimachinery/pkg/labels"
 
 	"github.com/pkg/errors"
-	"github.com/rancher/rancher/pkg/monitoring"
+	"github.com/uhhc/rancher/pkg/monitoring"
 	mgmtv3 "github.com/rancher/types/apis/management.cattle.io/v3"
 	projectv3 "github.com/rancher/types/apis/project.cattle.io/v3"
 	"github.com/sirupsen/logrus"

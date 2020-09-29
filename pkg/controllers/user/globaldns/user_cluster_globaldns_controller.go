@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/rancher/rancher/pkg/namespace"
+	"github.com/uhhc/rancher/pkg/namespace"
 	v1coreRancher "github.com/rancher/types/apis/core/v1"
 	v1beta1Rancher "github.com/rancher/types/apis/extensions/v1beta1"
 	v3 "github.com/rancher/types/apis/management.cattle.io/v3"

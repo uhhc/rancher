@@ -11,9 +11,9 @@ import (
 	"regexp"
 	"time"
 
-	"github.com/rancher/rancher/pkg/agent/node"
+	"github.com/uhhc/rancher/pkg/agent/node"
 
-	"github.com/rancher/rancher/pkg/rkeworker"
+	"github.com/uhhc/rancher/pkg/rkeworker"
 	"github.com/sirupsen/logrus"
 )
 

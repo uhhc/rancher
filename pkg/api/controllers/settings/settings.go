@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/rancher/rancher/pkg/settings"
+	"github.com/uhhc/rancher/pkg/settings"
 	v3 "github.com/rancher/types/apis/management.cattle.io/v3"
 	"github.com/rancher/types/config"
 	"k8s.io/apimachinery/pkg/api/errors"

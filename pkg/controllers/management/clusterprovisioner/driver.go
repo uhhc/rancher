@@ -5,7 +5,7 @@ import (
 	"reflect"
 
 	"github.com/rancher/kontainer-engine/service"
-	"github.com/rancher/rancher/pkg/clusterprovisioninglogger"
+	"github.com/uhhc/rancher/pkg/clusterprovisioninglogger"
 	"github.com/rancher/rke/services"
 	v3 "github.com/rancher/types/apis/management.cattle.io/v3"
 	"github.com/sirupsen/logrus"

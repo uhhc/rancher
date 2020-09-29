@@ -12,8 +12,8 @@ import (
 	"strings"
 
 	"github.com/rancher/norman/types/convert"
-	provisioner "github.com/rancher/rancher/pkg/controllers/management/clusterprovisioner"
-	"github.com/rancher/rancher/pkg/taints"
+	provisioner "github.com/uhhc/rancher/pkg/controllers/management/clusterprovisioner"
+	"github.com/uhhc/rancher/pkg/taints"
 	"github.com/rancher/remotedialer"
 	v3 "github.com/rancher/types/apis/management.cattle.io/v3"
 	client "github.com/rancher/types/client/management/v3"

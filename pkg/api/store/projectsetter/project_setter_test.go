@@ -5,7 +5,7 @@ import (
 	"testing"
 
 	"github.com/rancher/norman/types"
-	"github.com/rancher/rancher/pkg/project"
+	"github.com/uhhc/rancher/pkg/project"
 	v1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )

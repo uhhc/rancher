@@ -5,8 +5,8 @@ import (
 	"strings"
 
 	"github.com/pkg/errors"
-	projectpkg "github.com/rancher/rancher/pkg/project"
-	"github.com/rancher/rancher/pkg/settings"
+	projectpkg "github.com/uhhc/rancher/pkg/project"
+	"github.com/uhhc/rancher/pkg/settings"
 	v3 "github.com/rancher/types/apis/management.cattle.io/v3"
 	corev1 "k8s.io/api/core/v1"
 	apierrors "k8s.io/apimachinery/pkg/api/errors"

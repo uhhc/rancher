@@ -13,9 +13,9 @@ import (
 	"strings"
 
 	"github.com/pkg/errors"
-	helmlib "github.com/rancher/rancher/pkg/catalog/helm"
-	"github.com/rancher/rancher/pkg/controllers/user/helm/common"
-	"github.com/rancher/rancher/pkg/jailer"
+	helmlib "github.com/uhhc/rancher/pkg/catalog/helm"
+	"github.com/uhhc/rancher/pkg/controllers/user/helm/common"
+	"github.com/uhhc/rancher/pkg/jailer"
 	v3 "github.com/rancher/types/apis/project.cattle.io/v3"
 	"github.com/sirupsen/logrus"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"

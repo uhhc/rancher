@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/rancher/rancher/pkg/pipeline/providers"
-	"github.com/rancher/rancher/pkg/pipeline/remote/model"
-	"github.com/rancher/rancher/pkg/pipeline/utils"
+	"github.com/uhhc/rancher/pkg/pipeline/providers"
+	"github.com/uhhc/rancher/pkg/pipeline/remote/model"
+	"github.com/uhhc/rancher/pkg/pipeline/utils"
 	v3 "github.com/rancher/types/apis/project.cattle.io/v3"
 )
 

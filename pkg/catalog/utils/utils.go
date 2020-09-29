@@ -4,7 +4,7 @@ import (
 	"regexp"
 
 	"github.com/pkg/errors"
-	"github.com/rancher/rancher/pkg/namespace"
+	"github.com/uhhc/rancher/pkg/namespace"
 	v3 "github.com/rancher/types/apis/management.cattle.io/v3"
 	"github.com/sirupsen/logrus"
 	"gopkg.in/yaml.v2"

@@ -10,9 +10,9 @@ import (
 	"github.com/rancher/norman/types"
 	"github.com/rancher/norman/types/convert"
 	"github.com/rancher/norman/types/slice"
-	"github.com/rancher/rancher/pkg/auth/providerrefresh"
-	"github.com/rancher/rancher/pkg/auth/tokens"
-	"github.com/rancher/rancher/pkg/settings"
+	"github.com/uhhc/rancher/pkg/auth/providerrefresh"
+	"github.com/uhhc/rancher/pkg/auth/tokens"
+	"github.com/uhhc/rancher/pkg/settings"
 	v3 "github.com/rancher/types/apis/management.cattle.io/v3"
 	v3client "github.com/rancher/types/client/management/v3"
 )

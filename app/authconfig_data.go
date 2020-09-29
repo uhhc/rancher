@@ -1,14 +1,14 @@
 package app
 
 import (
-	"github.com/rancher/rancher/pkg/auth/providers/activedirectory"
-	"github.com/rancher/rancher/pkg/auth/providers/azure"
-	"github.com/rancher/rancher/pkg/auth/providers/github"
-	"github.com/rancher/rancher/pkg/auth/providers/googleoauth"
-	"github.com/rancher/rancher/pkg/auth/providers/ldap"
-	localprovider "github.com/rancher/rancher/pkg/auth/providers/local"
-	"github.com/rancher/rancher/pkg/auth/providers/saml"
-	"github.com/rancher/rancher/pkg/namespace"
+	"github.com/uhhc/rancher/pkg/auth/providers/activedirectory"
+	"github.com/uhhc/rancher/pkg/auth/providers/azure"
+	"github.com/uhhc/rancher/pkg/auth/providers/github"
+	"github.com/uhhc/rancher/pkg/auth/providers/googleoauth"
+	"github.com/uhhc/rancher/pkg/auth/providers/ldap"
+	localprovider "github.com/uhhc/rancher/pkg/auth/providers/local"
+	"github.com/uhhc/rancher/pkg/auth/providers/saml"
+	"github.com/uhhc/rancher/pkg/namespace"
 	v3 "github.com/rancher/types/apis/management.cattle.io/v3"
 	client "github.com/rancher/types/client/management/v3"
 	"github.com/rancher/types/config"

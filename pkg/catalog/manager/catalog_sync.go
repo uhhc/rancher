@@ -1,8 +1,8 @@
 package manager
 
 import (
-	helmlib "github.com/rancher/rancher/pkg/catalog/helm"
-	"github.com/rancher/rancher/pkg/namespace"
+	helmlib "github.com/uhhc/rancher/pkg/catalog/helm"
+	"github.com/uhhc/rancher/pkg/namespace"
 	v3 "github.com/rancher/types/apis/management.cattle.io/v3"
 	"github.com/sirupsen/logrus"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"

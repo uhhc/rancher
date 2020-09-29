@@ -10,7 +10,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/rancher/rancher/pkg/ref"
+	"github.com/uhhc/rancher/pkg/ref"
 	"github.com/rancher/rke/services"
 	v3 "github.com/rancher/types/apis/management.cattle.io/v3"
 	"github.com/rancher/types/config"

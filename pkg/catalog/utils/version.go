@@ -8,8 +8,8 @@ import (
 	mVersion "github.com/mcuadros/go-version"
 	"github.com/pkg/errors"
 	"github.com/rancher/norman/httperror"
-	"github.com/rancher/rancher/pkg/catalog/utils/version"
-	"github.com/rancher/rancher/pkg/settings"
+	"github.com/uhhc/rancher/pkg/catalog/utils/version"
+	"github.com/uhhc/rancher/pkg/settings"
 	v3 "github.com/rancher/types/apis/management.cattle.io/v3"
 )
 

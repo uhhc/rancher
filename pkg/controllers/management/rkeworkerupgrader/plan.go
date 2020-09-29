@@ -6,9 +6,9 @@ import (
 	"strings"
 
 	"github.com/pkg/errors"
-	kd "github.com/rancher/rancher/pkg/controllers/management/kontainerdrivermetadata"
-	"github.com/rancher/rancher/pkg/librke"
-	nodeserver "github.com/rancher/rancher/pkg/rkenodeconfigserver"
+	kd "github.com/uhhc/rancher/pkg/controllers/management/kontainerdrivermetadata"
+	"github.com/uhhc/rancher/pkg/librke"
+	nodeserver "github.com/uhhc/rancher/pkg/rkenodeconfigserver"
 	rkehosts "github.com/rancher/rke/hosts"
 	rkeservices "github.com/rancher/rke/services"
 	v3 "github.com/rancher/types/apis/management.cattle.io/v3"

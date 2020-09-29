@@ -6,7 +6,7 @@ import (
 
 	"github.com/rancher/norman/store/subtype"
 	"github.com/rancher/norman/types"
-	rancherapi "github.com/rancher/rancher/pkg/api"
+	rancherapi "github.com/uhhc/rancher/pkg/api"
 	publicSchema "github.com/rancher/types/apis/management.cattle.io/v3public/schema"
 	v3public "github.com/rancher/types/client/management/v3public"
 	"github.com/rancher/types/config"

@@ -4,7 +4,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/rancher/rancher/pkg/taints"
+	"github.com/uhhc/rancher/pkg/taints"
 	v3 "github.com/rancher/types/apis/management.cattle.io/v3"
 	"github.com/stretchr/testify/assert"
 	v1 "k8s.io/api/core/v1"

@@ -5,8 +5,8 @@ import (
 	"fmt"
 
 	"github.com/mitchellh/mapstructure"
-	"github.com/rancher/rancher/pkg/auth/providers/common"
-	"github.com/rancher/rancher/pkg/auth/providers/saml"
+	"github.com/uhhc/rancher/pkg/auth/providers/common"
+	"github.com/uhhc/rancher/pkg/auth/providers/saml"
 	v3 "github.com/rancher/types/apis/management.cattle.io/v3"
 	"github.com/rancher/types/config"
 

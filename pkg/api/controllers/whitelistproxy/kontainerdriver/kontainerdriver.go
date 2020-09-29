@@ -3,7 +3,7 @@ package kontainerdriver
 import (
 	"context"
 
-	"github.com/rancher/rancher/server/whitelist"
+	"github.com/uhhc/rancher/server/whitelist"
 	v3 "github.com/rancher/types/apis/management.cattle.io/v3"
 	"github.com/rancher/types/config"
 	"k8s.io/apimachinery/pkg/runtime"

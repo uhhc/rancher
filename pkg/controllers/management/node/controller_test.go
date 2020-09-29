@@ -7,7 +7,7 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/rancher/rancher/pkg/controllers/management/drivers/nodedriver"
+	"github.com/uhhc/rancher/pkg/controllers/management/drivers/nodedriver"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

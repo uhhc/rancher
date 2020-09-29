@@ -3,7 +3,7 @@ package deployer
 import (
 	"testing"
 
-	loggingconfig "github.com/rancher/rancher/pkg/controllers/user/logging/config"
+	loggingconfig "github.com/uhhc/rancher/pkg/controllers/user/logging/config"
 	"github.com/rancher/types/apis/core/v1/fakes"
 
 	"github.com/stretchr/testify/assert"

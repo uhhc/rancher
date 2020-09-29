@@ -1,18 +1,18 @@
 package deployer
 
 import (
-	loggingconfig "github.com/rancher/rancher/pkg/controllers/user/logging/config"
-	"github.com/rancher/rancher/pkg/controllers/user/logging/generator"
-	"github.com/rancher/rancher/pkg/project"
-	"github.com/rancher/rancher/pkg/ref"
-	"github.com/rancher/rancher/pkg/systemaccount"
+	loggingconfig "github.com/uhhc/rancher/pkg/controllers/user/logging/config"
+	"github.com/uhhc/rancher/pkg/controllers/user/logging/generator"
+	"github.com/uhhc/rancher/pkg/project"
+	"github.com/uhhc/rancher/pkg/ref"
+	"github.com/uhhc/rancher/pkg/systemaccount"
 	v1 "github.com/rancher/types/apis/core/v1"
 	mgmtv3 "github.com/rancher/types/apis/management.cattle.io/v3"
 	projectv3 "github.com/rancher/types/apis/project.cattle.io/v3"
 	"github.com/rancher/types/config"
 
 	"github.com/pkg/errors"
-	"github.com/rancher/rancher/pkg/namespace"
+	"github.com/uhhc/rancher/pkg/namespace"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/labels"
 )

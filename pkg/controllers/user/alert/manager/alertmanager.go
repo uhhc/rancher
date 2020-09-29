@@ -10,8 +10,8 @@ import (
 	"time"
 
 	"github.com/prometheus/common/model"
-	alertconfig "github.com/rancher/rancher/pkg/controllers/user/alert/config"
-	monitorutil "github.com/rancher/rancher/pkg/monitoring"
+	alertconfig "github.com/uhhc/rancher/pkg/controllers/user/alert/config"
+	monitorutil "github.com/uhhc/rancher/pkg/monitoring"
 
 	v1 "github.com/rancher/types/apis/core/v1"
 	"github.com/rancher/types/config"

@@ -9,7 +9,7 @@ import (
 	"net/http"
 	"reflect"
 
-	"github.com/rancher/rancher/pkg/auth/util"
+	"github.com/uhhc/rancher/pkg/auth/util"
 
 	"github.com/sirupsen/logrus"
 )

@@ -22,9 +22,9 @@ import (
 	"context"
 	"time"
 
-	clientset "github.com/rancher/rancher/pkg/wrangler/generated/clientset/versioned/typed/management.cattle.io/v3"
-	informers "github.com/rancher/rancher/pkg/wrangler/generated/informers/externalversions/management.cattle.io/v3"
-	listers "github.com/rancher/rancher/pkg/wrangler/generated/listers/management.cattle.io/v3"
+	clientset "github.com/uhhc/rancher/pkg/wrangler/generated/clientset/versioned/typed/management.cattle.io/v3"
+	informers "github.com/uhhc/rancher/pkg/wrangler/generated/informers/externalversions/management.cattle.io/v3"
+	listers "github.com/uhhc/rancher/pkg/wrangler/generated/listers/management.cattle.io/v3"
 	v3 "github.com/rancher/types/apis/management.cattle.io/v3"
 	"github.com/rancher/wrangler/pkg/apply"
 	"github.com/rancher/wrangler/pkg/condition"

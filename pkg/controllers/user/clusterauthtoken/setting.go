@@ -1,7 +1,7 @@
 package clusterauthtoken
 
 import (
-	"github.com/rancher/rancher/pkg/controllers/user/clusterauthtoken/common"
+	"github.com/uhhc/rancher/pkg/controllers/user/clusterauthtoken/common"
 	corev1 "github.com/rancher/types/apis/core/v1"
 	managementv3 "github.com/rancher/types/apis/management.cattle.io/v3"
 	v1 "k8s.io/api/core/v1"

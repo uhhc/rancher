@@ -12,8 +12,8 @@ import (
 
 	"github.com/pkg/errors"
 	"github.com/rancher/norman/types"
-	"github.com/rancher/rancher/pkg/clustermanager"
-	"github.com/rancher/rancher/pkg/metrics"
+	"github.com/uhhc/rancher/pkg/clustermanager"
+	"github.com/uhhc/rancher/pkg/metrics"
 	v3 "github.com/rancher/types/apis/management.cattle.io/v3"
 	"github.com/rancher/types/config"
 	tpeermanager "github.com/rancher/types/peermanager"

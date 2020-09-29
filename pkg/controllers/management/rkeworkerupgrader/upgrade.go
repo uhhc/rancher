@@ -7,9 +7,9 @@ import (
 	"time"
 
 	"github.com/docker/docker/pkg/locker"
-	"github.com/rancher/rancher/pkg/controllers/management/clusterprovisioner"
-	nodeserver "github.com/rancher/rancher/pkg/rkenodeconfigserver"
-	"github.com/rancher/rancher/pkg/systemaccount"
+	"github.com/uhhc/rancher/pkg/controllers/management/clusterprovisioner"
+	nodeserver "github.com/uhhc/rancher/pkg/rkenodeconfigserver"
+	"github.com/uhhc/rancher/pkg/systemaccount"
 	rkedefaults "github.com/rancher/rke/cluster"
 	"github.com/rancher/rke/util"
 	v3 "github.com/rancher/types/apis/management.cattle.io/v3"

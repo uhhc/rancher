@@ -19,7 +19,7 @@ limitations under the License.
 package fake
 
 import (
-	v3 "github.com/rancher/rancher/pkg/wrangler/generated/clientset/versioned/typed/management.cattle.io/v3"
+	v3 "github.com/uhhc/rancher/pkg/wrangler/generated/clientset/versioned/typed/management.cattle.io/v3"
 	rest "k8s.io/client-go/rest"
 	testing "k8s.io/client-go/testing"
 )

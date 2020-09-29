@@ -85,8 +85,8 @@ RUN curl -sLf ${!CHANNELSERVER_URL} > /usr/bin/channelserver && \
     curl -sLf ${!K3S_URL} > /usr/bin/k3s && \
     curl -sfL ${!ETCD_URL} | tar xvzf - --strip-components=1 -C /usr/bin/ etcd-${CATTLE_ETCD_VERSION}-linux-${ARCH}/etcd && \
     chmod +x /usr/bin/k3s /usr/bin/channelserver && \
-    mkdir -p /go/src/github.com/rancher/rancher/.kube && \
-    ln -s /etc/rancher/k3s/k3s.yaml /go/src/github.com/rancher/rancher/.kube/k3s.yaml
+    mkdir -p /go/src/github.com/uhhc/rancher/.kube && \
+    ln -s /etc/rancher/k3s/k3s.yaml /go/src/github.com/uhhc/rancher/.kube/k3s.yaml
 
 RUN wget -O - ${!DOCKER_URL} > /usr/bin/docker && chmod +x /usr/bin/docker
 
@@ -98,7 +98,7 @@ RUN apt-get update && \
 
 ENV HELM_HOME /root/.helm
 ENV DAPPER_ENV REPO TAG DRONE_TAG SYSTEM_CHART_DEFAULT_BRANCH
-ENV DAPPER_SOURCE /go/src/github.com/rancher/rancher/
+ENV DAPPER_SOURCE /go/src/github.com/uhhc/rancher/
 ENV DAPPER_OUTPUT ./bin ./dist
 ENV DAPPER_DOCKER_SOCKET true
 ENV TRASH_CACHE ${DAPPER_SOURCE}/.trash-cache

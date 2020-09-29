@@ -51,7 +51,7 @@ RUN pushd c:\; \
     popd;
 
 ENV DAPPER_ENV REPO TAG DRONE_TAG
-ENV DAPPER_SOURCE /gopath/src/github.com/rancher/rancher
+ENV DAPPER_SOURCE /gopath/src/github.com/uhhc/rancher
 ENV DAPPER_OUTPUT ./bin
 ENV DAPPER_DOCKER_SOCKET true
 ENV TRASH_CACHE ${DAPPER_SOURCE}/.trash-cache

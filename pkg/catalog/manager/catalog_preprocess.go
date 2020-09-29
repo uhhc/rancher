@@ -7,7 +7,7 @@ import (
 
 	"k8s.io/apimachinery/pkg/util/validation"
 
-	"github.com/rancher/rancher/pkg/catalog/helm"
+	"github.com/uhhc/rancher/pkg/catalog/helm"
 	v3 "github.com/rancher/types/apis/management.cattle.io/v3"
 )
 

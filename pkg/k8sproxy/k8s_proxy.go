@@ -3,8 +3,8 @@ package k8sproxy
 import (
 	"net/http"
 
-	"github.com/rancher/rancher/pkg/clusterrouter"
-	"github.com/rancher/rancher/pkg/k8slookup"
+	"github.com/uhhc/rancher/pkg/clusterrouter"
+	"github.com/uhhc/rancher/pkg/k8slookup"
 	"github.com/rancher/types/config"
 	"github.com/rancher/types/config/dialer"
 )

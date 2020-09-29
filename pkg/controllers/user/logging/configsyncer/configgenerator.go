@@ -5,9 +5,9 @@ import (
 	"strings"
 
 	"github.com/rancher/norman/controller"
-	loggingconfig "github.com/rancher/rancher/pkg/controllers/user/logging/config"
-	"github.com/rancher/rancher/pkg/controllers/user/logging/generator"
-	"github.com/rancher/rancher/pkg/project"
+	loggingconfig "github.com/uhhc/rancher/pkg/controllers/user/logging/config"
+	"github.com/uhhc/rancher/pkg/controllers/user/logging/generator"
+	"github.com/uhhc/rancher/pkg/project"
 	v1 "github.com/rancher/types/apis/core/v1"
 	mgmtv3 "github.com/rancher/types/apis/management.cattle.io/v3"
 

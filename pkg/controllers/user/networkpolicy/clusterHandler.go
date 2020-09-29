@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	"github.com/rancher/norman/types/convert"
-	"github.com/rancher/rancher/pkg/controllers/user/nodesyncer"
+	"github.com/uhhc/rancher/pkg/controllers/user/nodesyncer"
 	v1 "github.com/rancher/types/apis/core/v1"
 	v3 "github.com/rancher/types/apis/management.cattle.io/v3"
 	"github.com/rancher/types/config"

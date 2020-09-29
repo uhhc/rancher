@@ -5,7 +5,7 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/rancher/rancher/pkg/namespace"
+	"github.com/uhhc/rancher/pkg/namespace"
 	corev1 "github.com/rancher/types/apis/core/v1"
 	v1 "k8s.io/api/core/v1"
 	apierrors "k8s.io/apimachinery/pkg/api/errors"

@@ -1,7 +1,7 @@
 package app
 
 import (
-	"github.com/rancher/rancher/pkg/settings"
+	"github.com/uhhc/rancher/pkg/settings"
 	v3 "github.com/rancher/types/apis/management.cattle.io/v3"
 	"github.com/rancher/types/config"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"

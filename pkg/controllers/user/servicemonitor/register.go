@@ -3,7 +3,7 @@ package servicemonitor
 import (
 	"context"
 
-	util "github.com/rancher/rancher/pkg/controllers/user/workload"
+	util "github.com/uhhc/rancher/pkg/controllers/user/workload"
 	v1 "github.com/rancher/types/apis/core/v1"
 	rmonitoringv1 "github.com/rancher/types/apis/monitoring.coreos.com/v1"
 	"github.com/rancher/types/config"

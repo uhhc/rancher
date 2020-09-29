@@ -7,8 +7,8 @@ import (
 	corev1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/labels"
 
-	"github.com/rancher/rancher/pkg/controllers/user/alert/common"
-	"github.com/rancher/rancher/pkg/controllers/user/alert/manager"
+	"github.com/uhhc/rancher/pkg/controllers/user/alert/common"
+	"github.com/uhhc/rancher/pkg/controllers/user/alert/manager"
 	v1 "github.com/rancher/types/apis/core/v1"
 	v3 "github.com/rancher/types/apis/management.cattle.io/v3"
 	"github.com/sirupsen/logrus"

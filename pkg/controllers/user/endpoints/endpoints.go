@@ -10,9 +10,9 @@ import (
 	"sort"
 	"strings"
 
-	workloadUtil "github.com/rancher/rancher/pkg/controllers/user/workload"
-	nodehelper "github.com/rancher/rancher/pkg/node"
-	"github.com/rancher/rancher/pkg/settings"
+	workloadUtil "github.com/uhhc/rancher/pkg/controllers/user/workload"
+	nodehelper "github.com/uhhc/rancher/pkg/node"
+	"github.com/uhhc/rancher/pkg/settings"
 	v1 "github.com/rancher/types/apis/core/v1"
 	managementv3 "github.com/rancher/types/apis/management.cattle.io/v3"
 	v3 "github.com/rancher/types/apis/project.cattle.io/v3"

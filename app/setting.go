@@ -2,7 +2,7 @@ package app
 
 import (
 	"github.com/pborman/uuid"
-	"github.com/rancher/rancher/pkg/settings"
+	"github.com/uhhc/rancher/pkg/settings"
 )
 
 func addSetting() error {
