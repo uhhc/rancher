@@ -16,7 +16,7 @@ type Remote interface {
 
 	DeleteHook(pipeline *v3.Pipeline, accessToken string) error
 
-	GetPipelineFileInRepo(repoURL string, ref string, accessToken string) ([]byte, error)
+	GetPipelineFileInRepo(repoURL string, ref string, accessToken string, projectDisplayName string) ([]byte, error)
 
 	SetPipelineFileInRepo(repoURL string, ref string, accessToken string, content []byte) error
 

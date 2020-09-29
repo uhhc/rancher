@@ -210,7 +210,7 @@ func (c *client) getFileFromRepo(filename string, project string, ref string, ac
 	return file, nil
 }
 
-func (c *client) GetPipelineFileInRepo(repoURL string, ref string, accessToken string) ([]byte, error) {
+func (c *client) GetPipelineFileInRepo(repoURL string, ref string, accessToken string, projectDisplayName string) ([]byte, error) {
 	project, err := getProjectNameFromURL(repoURL)
 	if err != nil {
 		return nil, err
@@ -222,15 +222,33 @@ func (c *client) GetPipelineFileInRepo(repoURL string, ref string, accessToken s
 		}
 		ref = defaultBranch
 	}
-	file, err := c.getFileFromRepo(utils.PipelineFileYml, project, ref, accessToken)
-	if err != nil {
-		//look for both suffix
-		file, err = c.getFileFromRepo(utils.PipelineFileYaml, project, ref, accessToken)
+
+	// Add project name to yaml file
+	ymlFileProject := strings.TrimSuffix(utils.PipelineFileYml, ".yml") + "." + projectDisplayName + ".yml"
+	yamlFileProject := strings.TrimSuffix(utils.PipelineFileYaml, ".yaml") + "." + projectDisplayName + ".yaml"
+
+	var (
+		yamlFiles = []string{
+			ymlFileProject,
+			yamlFileProject,
+			utils.PipelineFileYml,
+			utils.PipelineFileYaml,
+		}
+		file *gitlab.File
+		fileErr error
+	)
+
+	for _, v := range yamlFiles {
+		file, fileErr = c.getFileFromRepo(v, project, ref, accessToken)
+		if fileErr == nil {
+			break
+		}
 	}
-	if err != nil {
+	if fileErr != nil {
 		logrus.Debugf("error GetPipelineFileInRepo - %v", err)
-		return nil, nil
+		return nil, err
 	}
+
 	if file.Content != "" {
 		b, err := base64.StdEncoding.DecodeString(file.Content)
 		if err != nil {

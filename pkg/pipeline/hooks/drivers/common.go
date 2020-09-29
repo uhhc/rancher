@@ -24,17 +24,20 @@ func isEventActivated(info *model.BuildInfo, pipeline *v3.Pipeline) bool {
 	return false
 }
 
-func validateAndGeneratePipelineExecution(pipelineExecutions v3.PipelineExecutionInterface,
+func validateAndGeneratePipelineExecution(
+	pipelineExecutions v3.PipelineExecutionInterface,
 	sourceCodeCredentials v3.SourceCodeCredentialInterface,
 	sourceCodeCredentialLister v3.SourceCodeCredentialLister,
 	info *model.BuildInfo,
-	pipeline *v3.Pipeline) (int, error) {
+	pipeline *v3.Pipeline,
+	projectDisplayName string,
+) (int, error) {
 
 	if !isEventActivated(info, pipeline) {
 		return http.StatusUnavailableForLegalReasons, fmt.Errorf("trigger for event '%s' is disabled", info.Event)
 	}
 
-	pipelineConfig, err := providers.GetPipelineConfigByBranch(sourceCodeCredentials, sourceCodeCredentialLister, pipeline, info.Branch)
+	pipelineConfig, err := providers.GetPipelineConfigByBranch(sourceCodeCredentials, sourceCodeCredentialLister, pipeline, info.Branch, projectDisplayName)
 	if err != nil {
 		return http.StatusInternalServerError, err
 	}

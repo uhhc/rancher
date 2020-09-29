@@ -11,11 +11,13 @@ import (
 	"net/http"
 	"strings"
 
+	mgmtv3 "github.com/rancher/types/apis/management.cattle.io/v3"
+	v3 "github.com/rancher/types/apis/project.cattle.io/v3"
+
 	"github.com/uhhc/rancher/pkg/pipeline/remote/bitbucketserver"
 	"github.com/uhhc/rancher/pkg/pipeline/remote/model"
 	"github.com/uhhc/rancher/pkg/pipeline/utils"
 	"github.com/uhhc/rancher/pkg/ref"
-	v3 "github.com/rancher/types/apis/project.cattle.io/v3"
 )
 
 const (
@@ -28,6 +30,7 @@ const (
 )
 
 type BitbucketServerDriver struct {
+	ProjectLister 			   mgmtv3.ProjectLister
 	PipelineLister             v3.PipelineLister
 	PipelineExecutions         v3.PipelineExecutionInterface
 	SourceCodeCredentials      v3.SourceCodeCredentialInterface
@@ -71,7 +74,15 @@ func (b BitbucketServerDriver) Execute(req *http.Request) (int, error) {
 		}
 	}
 
-	return validateAndGeneratePipelineExecution(b.PipelineExecutions, b.SourceCodeCredentials, b.SourceCodeCredentialLister, info, pipeline)
+	// Get project display name
+	projNs, projID := ref.Parse(pipeline.Spec.ProjectName)
+	proj, err := b.ProjectLister.Get(projNs, projID)
+	if err != nil {
+		return http.StatusInternalServerError, err
+	}
+	projectDisplayName := proj.Spec.DisplayName
+
+	return validateAndGeneratePipelineExecution(b.PipelineExecutions, b.SourceCodeCredentials, b.SourceCodeCredentialLister, info, pipeline, projectDisplayName)
 }
 
 func parseBitbucketServerPushPayload(raw []byte) (*model.BuildInfo, error) {

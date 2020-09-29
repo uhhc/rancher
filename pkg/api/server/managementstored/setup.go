@@ -612,6 +612,7 @@ func Monitor(schemas *types.Schemas, management *config.ScaledContext, clusterMa
 func Pipeline(schemas *types.Schemas, management *config.ScaledContext, clusterManager *clustermanager.Manager) {
 
 	pipelineHandler := &pipeline.Handler{
+		ProjectLister: 				management.Management.Projects("").Controller().Lister(),
 		PipelineLister:             management.Project.Pipelines("").Controller().Lister(),
 		PipelineExecutions:         management.Project.PipelineExecutions(""),
 		SourceCodeCredentials:      management.Project.SourceCodeCredentials(""),

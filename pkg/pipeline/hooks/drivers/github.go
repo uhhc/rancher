@@ -12,10 +12,12 @@ import (
 
 	"github.com/google/go-github/github"
 	"github.com/pkg/errors"
+	mgmtv3 "github.com/rancher/types/apis/management.cattle.io/v3"
+	v3 "github.com/rancher/types/apis/project.cattle.io/v3"
+
 	"github.com/uhhc/rancher/pkg/pipeline/remote/model"
 	"github.com/uhhc/rancher/pkg/pipeline/utils"
 	"github.com/uhhc/rancher/pkg/ref"
-	v3 "github.com/rancher/types/apis/project.cattle.io/v3"
 )
 
 const (
@@ -32,6 +34,7 @@ const (
 )
 
 type GithubDriver struct {
+	ProjectLister 			   mgmtv3.ProjectLister
 	PipelineLister             v3.PipelineLister
 	PipelineExecutions         v3.PipelineExecutionInterface
 	SourceCodeCredentials      v3.SourceCodeCredentialInterface
@@ -81,7 +84,15 @@ func (g GithubDriver) Execute(req *http.Request) (int, error) {
 		}
 	}
 
-	return validateAndGeneratePipelineExecution(g.PipelineExecutions, g.SourceCodeCredentials, g.SourceCodeCredentialLister, info, pipeline)
+	// Get project display name
+	projNs, projID := ref.Parse(pipeline.Spec.ProjectName)
+	proj, err := g.ProjectLister.Get(projNs, projID)
+	if err != nil {
+		return http.StatusInternalServerError, err
+	}
+	projectDisplayName := proj.Spec.DisplayName
+
+	return validateAndGeneratePipelineExecution(g.PipelineExecutions, g.SourceCodeCredentials, g.SourceCodeCredentialLister, info, pipeline, projectDisplayName)
 }
 
 func verifyGithubWebhookSignature(secret []byte, signature string, body []byte) bool {

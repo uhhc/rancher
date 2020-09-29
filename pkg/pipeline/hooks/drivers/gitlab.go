@@ -8,11 +8,13 @@ import (
 	"strings"
 
 	"github.com/pkg/errors"
+	mgmtv3 "github.com/rancher/types/apis/management.cattle.io/v3"
+	v3 "github.com/rancher/types/apis/project.cattle.io/v3"
+	"github.com/xanzy/go-gitlab"
+
 	"github.com/uhhc/rancher/pkg/pipeline/remote/model"
 	"github.com/uhhc/rancher/pkg/pipeline/utils"
 	"github.com/uhhc/rancher/pkg/ref"
-	v3 "github.com/rancher/types/apis/project.cattle.io/v3"
-	"github.com/xanzy/go-gitlab"
 )
 
 const (
@@ -29,6 +31,7 @@ const (
 )
 
 type GitlabDriver struct {
+	ProjectLister 			   mgmtv3.ProjectLister
 	PipelineLister             v3.PipelineLister
 	PipelineExecutions         v3.PipelineExecutionInterface
 	SourceCodeCredentials      v3.SourceCodeCredentialInterface
@@ -82,7 +85,15 @@ func (g GitlabDriver) Execute(req *http.Request) (int, error) {
 		}
 	}
 
-	return validateAndGeneratePipelineExecution(g.PipelineExecutions, g.SourceCodeCredentials, g.SourceCodeCredentialLister, info, pipeline)
+	// Get project display name
+	projNs, projID := ref.Parse(pipeline.Spec.ProjectName)
+	proj, err := g.ProjectLister.Get(projNs, projID)
+	if err != nil {
+		return http.StatusInternalServerError, err
+	}
+	projectDisplayName := proj.Spec.DisplayName
+
+	return validateAndGeneratePipelineExecution(g.PipelineExecutions, g.SourceCodeCredentials, g.SourceCodeCredentialLister, info, pipeline, projectDisplayName)
 }
 
 func gitlabParsePushPayload(raw []byte) (*model.BuildInfo, error) {

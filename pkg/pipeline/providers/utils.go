@@ -10,7 +10,13 @@ import (
 	"k8s.io/apimachinery/pkg/labels"
 )
 
-func GetPipelineConfigByBranch(sourceCodeCredentials v3.SourceCodeCredentialInterface, sourceCodeCredentialLister v3.SourceCodeCredentialLister, pipeline *v3.Pipeline, branch string) (*v3.PipelineConfig, error) {
+func GetPipelineConfigByBranch(
+	sourceCodeCredentials v3.SourceCodeCredentialInterface,
+	sourceCodeCredentialLister v3.SourceCodeCredentialLister,
+	pipeline *v3.Pipeline,
+	branch string,
+	projectDisplayName string,
+) (*v3.PipelineConfig, error) {
 	credentialName := pipeline.Spec.SourceCodeCredentialName
 	repoURL := pipeline.Spec.RepositoryURL
 	_, projID := ref.Parse(pipeline.Spec.ProjectName)
@@ -37,7 +43,7 @@ func GetPipelineConfigByBranch(sourceCodeCredentials v3.SourceCodeCredentialInte
 	if err != nil {
 		return nil, err
 	}
-	content, err := remote.GetPipelineFileInRepo(repoURL, branch, accessToken)
+	content, err := remote.GetPipelineFileInRepo(repoURL, branch, accessToken, projectDisplayName)
 	if err != nil {
 		return nil, err
 	}

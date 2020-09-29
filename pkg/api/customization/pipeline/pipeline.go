@@ -20,6 +20,8 @@ import (
 	client "github.com/rancher/types/client/project/v3"
 	"gopkg.in/yaml.v2"
 	"k8s.io/apimachinery/pkg/labels"
+
+	mgmtv3 "github.com/rancher/types/apis/management.cattle.io/v3"
 )
 
 const (
@@ -33,6 +35,7 @@ const (
 )
 
 type Handler struct {
+	ProjectLister 			   mgmtv3.ProjectLister
 	PipelineLister             v3.PipelineLister
 	PipelineExecutions         v3.PipelineExecutionInterface
 	SourceCodeCredentialLister v3.SourceCodeCredentialLister
@@ -104,8 +107,16 @@ func (h *Handler) run(apiContext *types.APIContext) error {
 		return httperror.NewAPIError(httperror.InvalidBodyContent, "Error branch is not specified for the pipeline to run")
 	}
 
+	// Get project display name
+	projNs, projID := ref.Parse(pipeline.Spec.ProjectName)
+	proj, err := h.ProjectLister.Get(projNs, projID)
+	if err != nil {
+		return err
+	}
+	projectDisplayName := proj.Spec.DisplayName
+
 	userName := apiContext.Request.Header.Get("Impersonate-User")
-	pipelineConfig, err := providers.GetPipelineConfigByBranch(h.SourceCodeCredentials, h.SourceCodeCredentialLister, pipeline, branch)
+	pipelineConfig, err := providers.GetPipelineConfigByBranch(h.SourceCodeCredentials, h.SourceCodeCredentialLister, pipeline, branch, projectDisplayName)
 	if err != nil {
 		return err
 	}
@@ -439,6 +450,7 @@ func (h *Handler) getPipelineConfigs(pipeline *v3.Pipeline, branch string) (map[
 	var scpConfig interface{}
 	var cred *v3.SourceCodeCredential
 	var err error
+	var projectDisplayName string
 	if pipeline.Spec.SourceCodeCredentialName != "" {
 		ns, name := ref.Parse(pipeline.Spec.SourceCodeCredentialName)
 		cred, err = h.SourceCodeCredentialLister.Get(ns, name)
@@ -446,11 +458,18 @@ func (h *Handler) getPipelineConfigs(pipeline *v3.Pipeline, branch string) (map[
 			return nil, err
 		}
 		sourceCodeType := cred.Spec.SourceCodeType
-		_, projID := ref.Parse(pipeline.Spec.ProjectName)
+		projNs, projID := ref.Parse(pipeline.Spec.ProjectName)
 		scpConfig, err = providers.GetSourceCodeProviderConfig(sourceCodeType, projID)
 		if err != nil {
 			return nil, err
 		}
+
+		// Get project display name
+		proj, err := h.ProjectLister.Get(projNs, projID)
+		if err != nil {
+			return nil, err
+		}
+		projectDisplayName = proj.Spec.DisplayName
 	}
 
 	remote, err := remote.New(scpConfig)
@@ -465,7 +484,7 @@ func (h *Handler) getPipelineConfigs(pipeline *v3.Pipeline, branch string) (map[
 	m := map[string]*v3.PipelineConfig{}
 
 	if branch != "" {
-		content, err := remote.GetPipelineFileInRepo(pipeline.Spec.RepositoryURL, branch, accessToken)
+		content, err := remote.GetPipelineFileInRepo(pipeline.Spec.RepositoryURL, branch, accessToken, projectDisplayName)
 		if err != nil {
 			return nil, err
 		}
@@ -485,7 +504,7 @@ func (h *Handler) getPipelineConfigs(pipeline *v3.Pipeline, branch string) (map[
 			return nil, err
 		}
 		for _, b := range branches {
-			content, err := remote.GetPipelineFileInRepo(pipeline.Spec.RepositoryURL, b, accessToken)
+			content, err := remote.GetPipelineFileInRepo(pipeline.Spec.RepositoryURL, b, accessToken, projectDisplayName)
 			if err != nil {
 				return nil, err
 			}

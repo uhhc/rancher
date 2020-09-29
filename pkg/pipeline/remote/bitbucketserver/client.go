@@ -18,12 +18,13 @@ import (
 	"github.com/mrjones/oauth"
 	"github.com/pkg/errors"
 	"github.com/rancher/norman/httperror"
+	v3 "github.com/rancher/types/apis/project.cattle.io/v3"
+	"github.com/sirupsen/logrus"
+
 	"github.com/uhhc/rancher/pkg/pipeline/remote/model"
 	"github.com/uhhc/rancher/pkg/pipeline/utils"
 	"github.com/uhhc/rancher/pkg/ref"
 	"github.com/uhhc/rancher/pkg/settings"
-	v3 "github.com/rancher/types/apis/project.cattle.io/v3"
-	"github.com/sirupsen/logrus"
 )
 
 const (
@@ -275,20 +276,38 @@ func (c *client) getFileFromRepo(filename string, owner string, repo string, bra
 	return c.getFromBitbucket(url, accessToken)
 }
 
-func (c *client) GetPipelineFileInRepo(repoURL string, branch string, accessToken string) ([]byte, error) {
+func (c *client) GetPipelineFileInRepo(repoURL string, branch string, accessToken string, projectDisplayName string) ([]byte, error) {
 	owner, repo, err := getUserRepoFromURL(repoURL)
 	if err != nil {
 		return nil, err
 	}
-	content, err := c.getFileFromRepo(utils.PipelineFileYaml, owner, repo, branch, accessToken)
-	if err != nil {
-		//look for both suffix
-		content, err = c.getFileFromRepo(utils.PipelineFileYml, owner, repo, branch, accessToken)
+
+	// Add project name to yaml file
+	ymlFileProject := strings.TrimSuffix(utils.PipelineFileYml, ".yml") + "." + projectDisplayName + ".yml"
+	yamlFileProject := strings.TrimSuffix(utils.PipelineFileYaml, ".yaml") + "." + projectDisplayName + ".yaml"
+
+	var (
+		yamlFiles = []string{
+			ymlFileProject,
+			yamlFileProject,
+			utils.PipelineFileYml,
+			utils.PipelineFileYaml,
+		}
+		content []byte
+		fileErr error
+	)
+
+	for _, v := range yamlFiles {
+		content, fileErr = c.getFileFromRepo(v, owner, repo, branch, accessToken)
+		if fileErr == nil {
+			break
+		}
 	}
-	if err != nil {
+	if fileErr != nil {
 		logrus.Debugf("error GetPipelineFileInRepo - %v", err)
-		return nil, nil
+		return nil, err
 	}
+
 	return content, nil
 }
 
