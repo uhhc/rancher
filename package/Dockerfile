@@ -12,7 +12,7 @@ RUN mkdir /root/.kube && \
 WORKDIR /var/lib/rancher
 
 ARG ARCH=amd64
-ARG IMAGE_REPO=rancher
+ARG IMAGE_REPO=uhhc
 ARG SYSTEM_CHART_DEFAULT_BRANCH=release-v2.4
 ARG DASHBOARD_BRANCH=release-2.4
 # kontainer-driver-metadata branch to be set for specific branch, logic at rancher/rancher/pkg/settings/setting.go

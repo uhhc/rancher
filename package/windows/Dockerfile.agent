@@ -72,7 +72,7 @@ COPY --from=builder /wins.exe /docker.exe /kubernetes/client/bin/kubectl.exe /Wi
 ARG VERSION=dev
 LABEL io.cattle.agent true
 ENV DOCKER_API_VERSION 1.24
-ENV AGENT_IMAGE rancher/rancher-agent:${VERSION}
+ENV AGENT_IMAGE uhhc/rancher-agent:${VERSION}
 ENV SSL_CERT_DIR C:\\etc\\kubernetes\\ssl\\certs
 COPY agent.exe *.ps1 *.psm1 /etc/rancher/
 ENTRYPOINT ["pwsh", "-NoLogo", "-NonInteractive", "-File", "c:/etc/rancher/entrypoint.ps1"]
